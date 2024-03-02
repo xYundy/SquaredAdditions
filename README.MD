@@ -23,7 +23,7 @@
 [![Issues][issues-shield]][issues-url]
 [![Build status][build-shield]][build-url]
 [![Mod side][side-shield]][side-url]
-[![Mod loader]  [loader-shield]][loader-url]
+[![Mod loader][loader-shield]][loader-url]
 [![MIT License][license-shield]][license-url]
   <p align="center">
     A Minecraft mod for Fabric modloader which adds new blocks, items & other Vanilla+/Create themed stuff.
