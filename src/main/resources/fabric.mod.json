@@ -3,15 +3,15 @@
 	"id": "squaredadditions",
 	"version": "${version}",
 	"name": "Squared Additions",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Stuff & Addictions for your Minecraft realm.",
 	"authors": [
-		"Me!"
+		"xYundy"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/xYundy",
+		"sources": "https://github.com/xYundy/SquaredAdditions"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/squaredadditions/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -37,8 +37,5 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
