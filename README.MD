@@ -107,6 +107,10 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 * Minecraft Java Edition (1.20.1)
 * Fabric mod loader
 
+#### Required mods
+
+* Fabric API
+
 ### Installation
 
 To install this mod:
