@@ -194,6 +194,7 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 * [Modding by Kaupenjoe](https://www.youtube.com/@ModdingByKaupenjoe)
+* [Blockbench](https://www.blockbench.net) - A low-poly 3D model editor
 * [Img Shields](https://shields.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
