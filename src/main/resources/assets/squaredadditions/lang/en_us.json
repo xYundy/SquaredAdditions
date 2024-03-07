@@ -3,5 +3,11 @@
     "_comment1": "I repeat: do NOT copy entries from English!!",
     "_comment2": "Copying English entries will cause them to become outdated when this file changes",
     "_comment3": "Untranslated entries will automatically be inherited from this file.",
-    "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!"
+    "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
+
+    "item.squaredadditions.copper_sword": "Copper Sword",
+    "item.squaredadditions.copper_shovel": "Copper Shovel",
+    "item.squaredadditions.copper_hoe": "Copper Hoe",
+    "item.squaredadditions.copper_axe": "Copper Axe",
+    "item.squaredadditions.copper_pickaxe": "Copper Pickaxe"
 }

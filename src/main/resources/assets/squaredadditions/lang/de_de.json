@@ -4,5 +4,11 @@
     "_comment2": "Copying English entries will cause them to become outdated when this file changes",
     "_comment3": "Untranslated entries will automatically be inherited from this file.",
     "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
-    "_comment5": "Hinweis für Übersetzer: KOPIEREN SIE KEINE EINTRÄGE AUS DEM ENGLISCHEN"
+    "_comment5": "Hinweis für Übersetzer: KOPIEREN SIE KEINE EINTRÄGE AUS DEM ENGLISCHEN",
+
+    "item.squaredadditions.copper_sword": "Kupfer Schwert",
+    "item.squaredadditions.copper_shovel": "Kupfer Schaufel",
+    "item.squaredadditions.copper_hoe": "Kupfer Hacke",
+    "item.squaredadditions.copper_axe": "Kupfer Axt",
+    "item.squaredadditions.copper_pickaxe": "Kupfer Spitzhacke"
 }

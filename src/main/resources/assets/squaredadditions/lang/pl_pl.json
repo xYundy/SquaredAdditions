@@ -4,5 +4,11 @@
     "_comment2": "Copying English entries will cause them to become outdated when this file changes",
     "_comment3": "Untranslated entries will automatically be inherited from this file.",
     "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
-    "_comment5": "Uwaga dla tłumaczy: NIE KOPIUJ WPISÓW Z JĘZYKA ANGIELSKIEGO"
+    "_comment5": "Uwaga dla tłumaczy: NIE KOPIUJ WPISÓW Z JĘZYKA ANGIELSKIEGO",
+
+    "item.squaredadditions.copper_sword": "Miedziany Miecz",
+    "item.squaredadditions.copper_shovel": "Miedziana Łopata",
+    "item.squaredadditions.copper_hoe": "Miedziana Motyka",
+    "item.squaredadditions.copper_axe": "Miedziana Siekiera",
+    "item.squaredadditions.copper_pickaxe": "Miedziany Kilof"
 }
