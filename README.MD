@@ -115,7 +115,7 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 
 To install this mod:
 1. Download this mod
-   1. from releases, [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or Modrinth (soon).
+   1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or Modrinth (soon).
    2. or "one-click download and install" using your Minecraft launcher (ex. Modrinth Launcher, Prism Launcher)
 2. Place mod `.jar` file in `mods` folder
 3. Launch the game
