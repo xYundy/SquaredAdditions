@@ -8,7 +8,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    COPPER_INGOT(5, 1500, 11.0f, 5.0f, 28, () -> Ingredient.ofItems(Items.COPPER_INGOT));
+    COPPER_INGOT(2, 200, 6.0f, 2.0f, 14, () -> Ingredient.ofItems(Items.COPPER_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
