@@ -2,13 +2,14 @@ package pl.xyundy.squaredadditions.item;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    COPPER_INGOT(2, 200, 6.0f, 2.0f, 14, () -> Ingredient.ofItems(Items.COPPER_INGOT));
+    COPPER_INGOT(ToolMaterials.STONE.getMiningLevel(), ToolMaterials.WOOD.getDurability(), ToolMaterials.IRON.getMiningSpeedMultiplier(), ToolMaterials.STONE.getAttackDamage(), ToolMaterials.STONE.getEnchantability(), () -> Ingredient.ofItems(Items.COPPER_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
