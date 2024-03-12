@@ -25,6 +25,10 @@
 [![Mod side][side-shield]][side-url]
 [![Mod loader][loader-shield]][loader-url]
 [![MIT License][license-shield]][license-url]
+[![Current Modrinth version][modrinth-version-badge]][modrinth-version-url]
+[![Modrinth download count][modrinth-downloads-badge]][modrinth-downloads-url]
+[![Supported Game Supported Versions][modrinth-supported-game-versions-shield]][modrinth-supported-game-versions-url]
+
   <p align="center">
     A Minecraft mod for Fabric modloader which adds new blocks, items & other Vanilla+/Create themed stuff.
     <br />
@@ -115,7 +119,7 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 
 To install this mod:
 1. Download this mod
-   1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or [Modrinth](https://modrinth.com/mod/squaredadditions) (soon).
+   1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or [Modrinth](https://modrinth.com/mod/squaredadditions).
    2. or "one-click download and install" using your Minecraft launcher (ex. Modrinth Launcher, Prism Launcher)
 2. Place mod `.jar` file in `mods` folder
 3. Launch the game
@@ -143,9 +147,9 @@ For more info about content of this mod, please refer to the [Wiki](https://gith
 <!-- ROADMAP -->
 ## Roadmap
 
-Current roadmap will be announced here shortly.
-
 See the [open issues](https://github.com/xyundy/squaredadditions/issues) for a full list of proposed features (and known issues).
+
+See the [milestones](https://github.com/xYundy/SquaredAdditions/milestones) for a roadmap of features in next mod versions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,6 +221,12 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 [loader-url]: https://fabricmc.net/wiki/player:tutorials:start#installing_fabric_loader
 [side-shield]: https://img.shields.io/badge/environment-both-4caf50?style=for-the-badge
 [side-url]: https://fabricmc.net/wiki/tutorial:side
+[modrinth-supported-game-versions-shield]: https://img.shields.io/modrinth/game-versions/uUiBMoXL?style=for-the-badge
+[modrinth-supported-game-versions-url]: https://modrinth.com/mod/squaredadditions
+[modrinth-version-badge]: https://img.shields.io/modrinth/v/uUiBMoXL?style=for-the-badge&label=Modrinth's%20version
+[modrinth-version-url]: https://modrinth.com/mod/squaredadditions/versions
+[modrinth-downloads-badge]: https://img.shields.io/modrinth/dt/uUiBMoXL?style=for-the-badge&label=modrinth%20downloads
+[modrinth-downloads-url]: https://modrinth.com/mod/squaredadditions/versions
 
 [IntelliJIdea]: https://img.shields.io/badge/IntelliJ_Idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white
 [IntelliJIdea-url]: https://www.jetbrains.com/idea/
