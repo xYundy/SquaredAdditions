@@ -1,7 +1,12 @@
 plugins {
-	id 'fabric-loom' version '1.5-SNAPSHOT'
-	id 'maven-publish'
+	id 'fabric-loom' version "1.5.+"
+	
+	id 'maven-publish'  // maven publishing
 }
+
+String runNumber = System.getenv("GITHUB_RUN_NUMBER")
+String build = runNumber != null ? "build.$runNumber" : "local"
+version = "$mod_version-$build+mc$minecraft_version"
 
 version = project.mod_version
 group = project.maven_group
