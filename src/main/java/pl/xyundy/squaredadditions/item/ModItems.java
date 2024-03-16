@@ -12,26 +12,26 @@ import pl.xyundy.squaredadditions.SquaredAdditions;
 public class ModItems {
 
     public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new SwordItem(ModToolMaterial.COPPER_INGOT, 2, 2f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.COPPER_INGOT, 3, -2.4F, new FabricItemSettings()));
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
-            new PickaxeItem(ModToolMaterial.COPPER_INGOT, 1, 1f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterial.COPPER_INGOT, 1, -2.8F, new FabricItemSettings()));
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
-            new ShovelItem(ModToolMaterial.COPPER_INGOT, 0, 0f, new FabricItemSettings()));
+            new ShovelItem(ModToolMaterial.COPPER_INGOT, 1.5F, -3.0F, new FabricItemSettings()));
     public static final Item COPPER_AXE = registerItem("copper_axe",
-            new AxeItem(ModToolMaterial.COPPER_INGOT, 6, -2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.COPPER_INGOT, 7.0F, -3.2F, new FabricItemSettings()));
     public static final Item COPPER_HOE = registerItem("copper_hoe",
-            new HoeItem(ModToolMaterial.COPPER_INGOT, 0, 0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.COPPER_INGOT, -1, -2.0F, new FabricItemSettings()));
 
     public static final Item EMERALD_SWORD = registerItem("emerald_sword",
-            new SwordItem(ModToolMaterial.EMERALD, 2, 2f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.EMERALD, 3, -2.4F, new FabricItemSettings()));
     public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe",
-            new PickaxeItem(ModToolMaterial.EMERALD, 1, 1f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterial.EMERALD, 1, -2.8F, new FabricItemSettings()));
     public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel",
-            new ShovelItem(ModToolMaterial.EMERALD, 0, 0f, new FabricItemSettings()));
+            new ShovelItem(ModToolMaterial.EMERALD, 1.5F, -3.0F, new FabricItemSettings()));
     public static final Item EMERALD_AXE = registerItem("emerald_axe",
-            new AxeItem(ModToolMaterial.EMERALD, 6, -2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.EMERALD, 6.0F, -3.1F, new FabricItemSettings()));
     public static final Item EMERALD_HOE = registerItem("emerald_hoe",
-            new HoeItem(ModToolMaterial.EMERALD, 0, 0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.EMERALD, -2, -1.0F, new FabricItemSettings()));
 
 
 
