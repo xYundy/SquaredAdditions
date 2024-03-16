@@ -10,5 +10,10 @@
     "item.squaredadditions.copper_shovel": "Kupfer Schaufel",
     "item.squaredadditions.copper_hoe": "Kupfer Hacke",
     "item.squaredadditions.copper_axe": "Kupfer Axt",
-    "item.squaredadditions.copper_pickaxe": "Kupfer Spitzhacke"
+    "item.squaredadditions.copper_pickaxe": "Kupfer Spitzhacke",
+    "item.squaredadditions.emerald_sword": "Smaragd Schwert",
+    "item.squaredadditions.emerald_shovel": "Smaragd Schaufel",
+    "item.squaredadditions.emerald_hoe": "Smaragd Hacke",
+    "item.squaredadditions.emerald_axe": "Smaragd Axt",
+    "item.squaredadditions.emerald_pickaxe": "Smaragd Spitzhacke"
 }

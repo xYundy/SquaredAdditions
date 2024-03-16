@@ -9,7 +9,8 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    COPPER_INGOT(ToolMaterials.STONE.getMiningLevel(), ToolMaterials.WOOD.getDurability(), ToolMaterials.IRON.getMiningSpeedMultiplier(), ToolMaterials.IRON.getAttackDamage(), ToolMaterials.STONE.getEnchantability(), () -> Ingredient.ofItems(Items.COPPER_INGOT));
+    COPPER_INGOT(ToolMaterials.STONE.getMiningLevel(), ToolMaterials.WOOD.getDurability(), ToolMaterials.IRON.getMiningSpeedMultiplier(), ToolMaterials.IRON.getAttackDamage(), ToolMaterials.STONE.getEnchantability(), () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+    EMERALD(ToolMaterials.IRON.getMiningLevel(), ToolMaterials.DIAMOND.getDurability(), ToolMaterials.DIAMOND.getMiningSpeedMultiplier(), ToolMaterials.IRON.getAttackDamage(), ToolMaterials.DIAMOND.getEnchantability(), () -> Ingredient.ofItems(Items.EMERALD));
 
     private final int miningLevel;
     private final int itemDurability;

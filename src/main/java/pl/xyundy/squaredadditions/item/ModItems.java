@@ -22,6 +22,17 @@ public class ModItems {
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new HoeItem(ModToolMaterial.COPPER_INGOT, 0, 0f, new FabricItemSettings()));
 
+    public static final Item EMERALD_SWORD = registerItem("emerald_sword",
+            new SwordItem(ModToolMaterial.EMERALD, 2, 2f, new FabricItemSettings()));
+    public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe",
+            new PickaxeItem(ModToolMaterial.EMERALD, 1, 1f, new FabricItemSettings()));
+    public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel",
+            new ShovelItem(ModToolMaterial.EMERALD, 0, 0f, new FabricItemSettings()));
+    public static final Item EMERALD_AXE = registerItem("emerald_axe",
+            new AxeItem(ModToolMaterial.EMERALD, 6, -2f, new FabricItemSettings()));
+    public static final Item EMERALD_HOE = registerItem("emerald_hoe",
+            new HoeItem(ModToolMaterial.EMERALD, 0, 0f, new FabricItemSettings()));
+
 
 
     private static Item registerItem(String name, Item item) {
@@ -32,12 +43,18 @@ public class ModItems {
     public static void itemGroupCombat(FabricItemGroupEntries entries) {
         entries.add(COPPER_SWORD);
         entries.add(COPPER_PICKAXE);
+        entries.add(EMERALD_SWORD);
+        entries.add(EMERALD_PICKAXE);
     }
     public static void itemGroupTools(FabricItemGroupEntries entries) {
         entries.add(COPPER_PICKAXE);
         entries.add(COPPER_SHOVEL);
         entries.add(COPPER_AXE);
         entries.add(COPPER_HOE);
+        entries.add(EMERALD_PICKAXE);
+        entries.add(EMERALD_SHOVEL);
+        entries.add(EMERALD_AXE);
+        entries.add(EMERALD_HOE);
     }
 
     public static void registerModItems() {
