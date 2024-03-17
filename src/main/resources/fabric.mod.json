@@ -9,6 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/xYundy",
+		"issues": "https://github.com/xYundy/SquaredAdditions/issues",
 		"sources": "https://github.com/xYundy/SquaredAdditions"
 	},
 	"license": "MIT",
