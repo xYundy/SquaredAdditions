@@ -1,0 +1,19 @@
+{
+    "_comment0": "Note to translators: DO NOT COPY ENTRIES FROM ENGLISH",
+    "_comment1": "I repeat: do NOT copy entries from English!!",
+    "_comment2": "Copying English entries will cause them to become outdated when this file changes",
+    "_comment3": "Untranslated entries will automatically be inherited from this file.",
+    "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
+    "_comment5": "Notă pentru traducători: NU COPIAȚI ENTITĂȚI DIN LIMBA ENGLEZĂ",
+
+    "item.squaredadditions.copper_sword": "Sabia de cupru",
+    "item.squaredadditions.copper_shovel": "Lopata de cupru",
+    "item.squaredadditions.copper_hoe": "Sapa de cupru",
+    "item.squaredadditions.copper_axe": "Topor de cupru",
+    "item.squaredadditions.copper_pickaxe": "Picamer de cupru",
+    "item.squaredadditions.emerald_sword": "Sabia de smarald",
+    "item.squaredadditions.emerald_shovel": "Lopata de smarald",
+    "item.squaredadditions.emerald_hoe": "Sapa de smarald",
+    "item.squaredadditions.emerald_axe": "Topor de smarald",
+    "item.squaredadditions.emerald_pickaxe": "Picamer de smarald"
+}
