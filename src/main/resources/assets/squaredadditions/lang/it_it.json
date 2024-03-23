@@ -1,0 +1,19 @@
+{
+    "_comment0": "Note to translators: DO NOT COPY ENTRIES FROM ENGLISH",
+    "_comment1": "I repeat: do NOT copy entries from English!!",
+    "_comment2": "Copying English entries will cause them to become outdated when this file changes",
+    "_comment3": "Untranslated entries will automatically be inherited from this file.",
+    "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
+    "_comment5": "Nota per i traduttori: NON COPIARE ENTITLE DALL'INGLESE",
+
+    "item.squaredadditions.copper_sword": "Spada di rame",
+    "item.squaredadditions.copper_shovel": "Pala di rame",
+    "item.squaredadditions.copper_hoe": "Zappa di rame",
+    "item.squaredadditions.copper_axe": "Ascia di rame",
+    "item.squaredadditions.copper_pickaxe": "Piccone di rame",
+    "item.squaredadditions.emerald_sword": "Spada di smeraldo",
+    "item.squaredadditions.emerald_shovel": "Pala di Smeraldo",
+    "item.squaredadditions.emerald_hoe": "Zappa di smeraldo",
+    "item.squaredadditions.emerald_axe": "Ascia di smeraldo",
+    "item.squaredadditions.emerald_pickaxe": "Piccone di smeraldo"
+}
