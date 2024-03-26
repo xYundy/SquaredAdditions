@@ -1,0 +1,25 @@
+"project_id_env": "CROWDIN_PROJECT_ID"
+"api_token_env": "CROWDIN_PERSONAL_TOKEN"
+"base_path": "."
+
+"preserve_hierarchy": true
+
+"files": [
+    {
+        "source": "src/main/resources/assets/squaredadditions/lang/en_us.json",
+        "translation": "src/main/resources/assets/squaredadditions/lang/%locale_with_underscore%.json",
+        "languages_mapping": {
+            "locale_with_underscore": {
+                "cs": "cs_cz",
+                "de": "de_de",
+                "eo": "eo_uy",
+                "fr": "fr_fr",
+                "it": "it_it",
+                "pl": "pl_pl",
+                "uk": "uk_ua",
+                "sk": "sk_sk",
+                "ro": "ro_ro"
+            }
+        }
+    }
+]
