@@ -185,7 +185,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Feel free to contact me using one of available methods on my Github profile and/or listed below
+Feel free to contact me using one of available methods on my Github profile and/or listed below:
 
 Discord: `xyundy`
 
