@@ -83,6 +83,7 @@ What I want accomplish by developing this project:
 * I want to try add different kind of features which will come to my mind watching course created by: [Modding by Kaupenjoe](https://www.youtube.com/@ModdingByKaupenjoe)
 * I also like [Create mod](https://modrinth.com/mod/create-fabric) so I want try to integrate with it.
 * I want to do thing will make me smile while coding and while playing using this mod on server with friends :smile:
+* I want to create mod which will support many languages instead of "english only"
 
 Of course, no one mod will serve all player tastes and/or be "fully completed". So I'll be adding more features in the near future which looks good to me.
 You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this mod!
