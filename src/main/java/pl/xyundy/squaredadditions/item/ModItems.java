@@ -43,6 +43,7 @@ public class ModItems {
     public static void itemGroupCombat(FabricItemGroupEntries entries) {
         entries.add(COPPER_SWORD);
         entries.add(COPPER_PICKAXE);
+
         entries.add(EMERALD_SWORD);
         entries.add(EMERALD_PICKAXE);
     }
@@ -51,6 +52,7 @@ public class ModItems {
         entries.add(COPPER_SHOVEL);
         entries.add(COPPER_AXE);
         entries.add(COPPER_HOE);
+
         entries.add(EMERALD_PICKAXE);
         entries.add(EMERALD_SHOVEL);
         entries.add(EMERALD_AXE);
