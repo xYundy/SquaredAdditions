@@ -64,5 +64,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::itemGroupTools);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::itemGroupCombat);
+
+        SquaredAdditions.LOGGER.info("Registering Mod Items for " + SquaredAdditions.MOD_ID + " finished!");
+
     }
 }
