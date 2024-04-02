@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pl.xyundy.squaredadditions.block.ModBlocks;
 import pl.xyundy.squaredadditions.item.ModItems;
 
 public class SquaredAdditions implements ModInitializer {
@@ -14,6 +15,7 @@ public class SquaredAdditions implements ModInitializer {
 	public void onInitialize() {
   		LOGGER.info("SquaredAdditions initialization started!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("SquaredAdditions initialization completed!");
 	}
 }

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import pl.xyundy.squaredadditions.SquaredAdditions;
+import pl.xyundy.squaredadditions.block.ModBlocks;
 
 public class ModItems {
 
@@ -64,12 +65,17 @@ public class ModItems {
         entries.add(ROSE_GOLD_INGOT);
     }
 
+    public static void itemGroupBuildingBlocks(FabricItemGroupEntries entries) {
+        entries.add(ModBlocks.ROSE_GOLD_BLOCK);
+    }
+
     public static void registerModItems() {
         SquaredAdditions.LOGGER.info("Registering Mod Items for " + SquaredAdditions.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::itemGroupTools);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::itemGroupCombat);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredient);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::itemGroupBuildingBlocks);
 
         SquaredAdditions.LOGGER.info("Registering Mod Items for " + SquaredAdditions.MOD_ID + " finished!");
 

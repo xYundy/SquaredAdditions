@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "squaredadditions:rose_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "squaredadditions:rose_gold_block"
+  }
+}

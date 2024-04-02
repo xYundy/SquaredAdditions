@@ -15,5 +15,7 @@
     "item.squaredadditions.emerald_shovel": "Pala di Smeraldo",
     "item.squaredadditions.emerald_hoe": "Zappa di smeraldo",
     "item.squaredadditions.emerald_axe": "Ascia di smeraldo",
-    "item.squaredadditions.emerald_pickaxe": "Piccone di smeraldo"
+    "item.squaredadditions.emerald_pickaxe": "Piccone di smeraldo",
+    "item.squaredadditions.rose_gold_ingot": "Lingotto d'oro rosa",
+    "block.squaredadditions.rose_gold_block": "Blocco oro rosa"
 }

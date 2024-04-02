@@ -15,5 +15,7 @@
     "item.squaredadditions.emerald_shovel": "Smaragd Schaufel",
     "item.squaredadditions.emerald_hoe": "Smaragd Hacke",
     "item.squaredadditions.emerald_axe": "Smaragd Axt",
-    "item.squaredadditions.emerald_pickaxe": "Smaragd Spitzhacke"
+    "item.squaredadditions.emerald_pickaxe": "Smaragd Spitzhacke",
+    "item.squaredadditions.rose_gold_ingot": "Roségoldbarren",
+    "block.squaredadditions.rose_gold_block": "Roségoldblock"
 }
