@@ -33,7 +33,8 @@ public class ModItems {
     public static final Item EMERALD_HOE = registerItem("emerald_hoe",
             new HoeItem(ModToolMaterial.EMERALD, -2, -1.0F, new FabricItemSettings()));
 
-
+    public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot",
+            new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SquaredAdditions.MOD_ID, name), item);
@@ -59,11 +60,16 @@ public class ModItems {
         entries.add(EMERALD_HOE);
     }
 
+    public static void itemGroupIngredient(FabricItemGroupEntries entries) {
+        entries.add(ROSE_GOLD_INGOT);
+    }
+
     public static void registerModItems() {
         SquaredAdditions.LOGGER.info("Registering Mod Items for " + SquaredAdditions.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::itemGroupTools);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::itemGroupCombat);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredient);
 
         SquaredAdditions.LOGGER.info("Registering Mod Items for " + SquaredAdditions.MOD_ID + " finished!");
 
