@@ -25,5 +25,6 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         SquaredAdditions.LOGGER.info("Registering ModBlocks for " + SquaredAdditions.MOD_ID);
+        SquaredAdditions.LOGGER.info("Registering Mod Items for " + SquaredAdditions.MOD_ID + " finished!");
     }
 }
