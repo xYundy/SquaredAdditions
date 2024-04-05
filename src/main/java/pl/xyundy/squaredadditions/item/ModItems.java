@@ -36,6 +36,16 @@ public class ModItems {
 
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot",
             new Item(new FabricItemSettings()));
+    public static final Item ROSE_GOLD_SWORD = registerItem("rose_gold_sword",
+            new SwordItem(ModToolMaterial.ROSE_GOLD_INGOT, 3, -2.4F, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_PICKAXE = registerItem("rose_gold_pickaxe",
+            new PickaxeItem(ModToolMaterial.ROSE_GOLD_INGOT, 1, -2.8F, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_SHOVEL = registerItem("rose_gold_shovel",
+            new ShovelItem(ModToolMaterial.ROSE_GOLD_INGOT, 1.5F, -3.0F, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_AXE = registerItem("rose_gold_axe",
+            new AxeItem(ModToolMaterial.ROSE_GOLD_INGOT, 6.0F, -3.0F, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_HOE = registerItem("rose_gold_hoe",
+            new HoeItem(ModToolMaterial.ROSE_GOLD_INGOT, -1, -3.0F, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SquaredAdditions.MOD_ID, name), item);
@@ -44,10 +54,13 @@ public class ModItems {
 
     public static void itemGroupCombat(FabricItemGroupEntries entries) {
         entries.add(COPPER_SWORD);
-        entries.add(COPPER_PICKAXE);
+        entries.add(COPPER_AXE);
 
         entries.add(EMERALD_SWORD);
-        entries.add(EMERALD_PICKAXE);
+        entries.add(EMERALD_AXE);
+
+        entries.add(ROSE_GOLD_SWORD);
+        entries.add(ROSE_GOLD_AXE);
     }
     public static void itemGroupTools(FabricItemGroupEntries entries) {
         entries.add(COPPER_PICKAXE);
@@ -59,6 +72,11 @@ public class ModItems {
         entries.add(EMERALD_SHOVEL);
         entries.add(EMERALD_AXE);
         entries.add(EMERALD_HOE);
+
+        entries.add(ROSE_GOLD_PICKAXE);
+        entries.add(ROSE_GOLD_SHOVEL);
+        entries.add(ROSE_GOLD_AXE);
+        entries.add(ROSE_GOLD_HOE);
     }
 
     public static void itemGroupIngredient(FabricItemGroupEntries entries) {

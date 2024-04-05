@@ -16,5 +16,10 @@
     "item.squaredadditions.emerald_axe": "Emerald Axe",
     "item.squaredadditions.emerald_pickaxe": "Emerald Pickaxe",
     "item.squaredadditions.rose_gold_ingot": "Rose Gold Ingot",
-    "block.squaredadditions.rose_gold_block": "Rose Gold Block"
+    "block.squaredadditions.rose_gold_block": "Rose Gold Block",
+    "item.squaredadditions.rose_gold_sword": "Rose Gold Sword",
+    "item.squaredadditions.rose_gold_shovel": "Rose Gold Shovel",
+    "item.squaredadditions.rose_gold_hoe": "Rose Gold Hoe",
+    "item.squaredadditions.rose_gold_axe": "Rose Gold Axe",
+    "item.squaredadditions.rose_gold_pickaxe": "Rose Gold Pickaxe"
 }

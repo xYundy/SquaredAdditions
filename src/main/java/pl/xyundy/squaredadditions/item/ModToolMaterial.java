@@ -10,7 +10,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     COPPER_INGOT(ToolMaterials.STONE.getMiningLevel(), ToolMaterials.WOOD.getDurability(), ToolMaterials.IRON.getMiningSpeedMultiplier(), ToolMaterials.IRON.getAttackDamage(), ToolMaterials.STONE.getEnchantability(), () -> Ingredient.ofItems(Items.COPPER_INGOT)),
-    EMERALD(ToolMaterials.IRON.getMiningLevel(), ToolMaterials.DIAMOND.getDurability(), ToolMaterials.DIAMOND.getMiningSpeedMultiplier(), ToolMaterials.IRON.getAttackDamage(), ToolMaterials.DIAMOND.getEnchantability(), () -> Ingredient.ofItems(Items.EMERALD));
+    EMERALD(ToolMaterials.IRON.getMiningLevel(), ToolMaterials.DIAMOND.getDurability(), ToolMaterials.DIAMOND.getMiningSpeedMultiplier(), ToolMaterials.IRON.getAttackDamage(), ToolMaterials.DIAMOND.getEnchantability(), () -> Ingredient.ofItems(Items.EMERALD)),
+    ROSE_GOLD_INGOT(ToolMaterials.GOLD.getMiningLevel(), ToolMaterials.GOLD.getDurability() + COPPER_INGOT.getDurability(), ToolMaterials.GOLD.getMiningSpeedMultiplier(), ToolMaterials.GOLD.getAttackDamage(), ToolMaterials.GOLD.getEnchantability(), () -> Ingredient.ofItems(ModItems.ROSE_GOLD_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

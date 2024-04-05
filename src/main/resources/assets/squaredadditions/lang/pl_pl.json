@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Szmaragdowa Siekiera",
     "item.squaredadditions.emerald_pickaxe": "Szmaragdowy Kilof",
     "item.squaredadditions.rose_gold_ingot": "Sztabka Różowego Złota",
-    "block.squaredadditions.rose_gold_block": "Blok Różowego Złota"
+    "block.squaredadditions.rose_gold_block": "Blok Różowego Złota",
+    "item.squaredadditions.rose_gold_sword": "Różowozłoty Miecz",
+    "item.squaredadditions.rose_gold_shovel": "Różowozłota Łopata",
+    "item.squaredadditions.rose_gold_hoe": "Różowozłota Motyka",
+    "item.squaredadditions.rose_gold_axe": "Różowozłota Siekiera",
+    "item.squaredadditions.rose_gold_pickaxe": "Różowozłoty Kilof"
 }
