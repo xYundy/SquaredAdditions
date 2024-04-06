@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Smaragd Axt",
     "item.squaredadditions.emerald_pickaxe": "Smaragd Spitzhacke",
     "item.squaredadditions.rose_gold_ingot": "Roségoldbarren",
-    "block.squaredadditions.rose_gold_block": "Roségoldblock"
+    "block.squaredadditions.rose_gold_block": "Roségoldblock",
+    "item.squaredadditions.rose_gold_sword": "Rosengold Schwert",
+    "item.squaredadditions.rose_gold_shovel": "Rosengold Schaufel",
+    "item.squaredadditions.rose_gold_hoe": "Rosengold Hacke",
+    "item.squaredadditions.rose_gold_axe": "Rosengold Axt",
+    "item.squaredadditions.rose_gold_pickaxe": "Rosengold Spitzhacke"
 }
