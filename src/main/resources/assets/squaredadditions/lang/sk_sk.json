@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Smaragdová sekera",
     "item.squaredadditions.emerald_pickaxe": "Smaragdový krompáč",
     "item.squaredadditions.rose_gold_ingot": "Zliatok ružového zlata",
-    "block.squaredadditions.rose_gold_block": "Blok ružového zlata"
+    "block.squaredadditions.rose_gold_block": "Blok ružového zlata",
+    "item.squaredadditions.rose_gold_sword": "Rose Gold Sword",
+    "item.squaredadditions.rose_gold_shovel": "Ružovo-zlatý meč",
+    "item.squaredadditions.rose_gold_hoe": "Ružovo-zlatá motyka",
+    "item.squaredadditions.rose_gold_axe": "Ružovo-zlatá sekera",
+    "item.squaredadditions.rose_gold_pickaxe": "Ružovo-zlatý krompáč"
 }

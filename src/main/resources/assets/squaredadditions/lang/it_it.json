@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Ascia di smeraldo",
     "item.squaredadditions.emerald_pickaxe": "Piccone di smeraldo",
     "item.squaredadditions.rose_gold_ingot": "Lingotto d'oro rosa",
-    "block.squaredadditions.rose_gold_block": "Blocco oro rosa"
+    "block.squaredadditions.rose_gold_block": "Blocco oro rosa",
+    "item.squaredadditions.rose_gold_sword": "Spada in oro rosa",
+    "item.squaredadditions.rose_gold_shovel": "Pala in oro rosa",
+    "item.squaredadditions.rose_gold_hoe": "Zappa in oro rosa",
+    "item.squaredadditions.rose_gold_axe": "Ascia in oro rosa",
+    "item.squaredadditions.rose_gold_pickaxe": "Piccone d'oro rosa"
 }

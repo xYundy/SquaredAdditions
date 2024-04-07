@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Topor de smarald",
     "item.squaredadditions.emerald_pickaxe": "Picamer de smarald",
     "item.squaredadditions.rose_gold_ingot": "Lingou de aur roz",
-    "block.squaredadditions.rose_gold_block": "Bloc de aur roz"
+    "block.squaredadditions.rose_gold_block": "Bloc de aur roz",
+    "item.squaredadditions.rose_gold_sword": "Sabie de aur roz",
+    "item.squaredadditions.rose_gold_shovel": "Lopată de aur roz",
+    "item.squaredadditions.rose_gold_hoe": "Sapa de aur roz",
+    "item.squaredadditions.rose_gold_axe": "Topor de aur roz",
+    "item.squaredadditions.rose_gold_pickaxe": "Picamer de aur roz"
 }

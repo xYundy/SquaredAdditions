@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Hache d'émeraude",
     "item.squaredadditions.emerald_pickaxe": "Pioche d'émeraude",
     "item.squaredadditions.rose_gold_ingot": "Lingot d'or rose",
-    "block.squaredadditions.rose_gold_block": "Bloc d'or rose"
+    "block.squaredadditions.rose_gold_block": "Bloc d'or rose",
+    "item.squaredadditions.rose_gold_sword": "Épée en or rose",
+    "item.squaredadditions.rose_gold_shovel": "Pelle en or rose",
+    "item.squaredadditions.rose_gold_hoe": "Houe en or rose",
+    "item.squaredadditions.rose_gold_axe": "Hache en or rose",
+    "item.squaredadditions.rose_gold_pickaxe": "Pioche en or rose"
 }

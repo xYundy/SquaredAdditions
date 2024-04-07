@@ -17,5 +17,10 @@
     "item.squaredadditions.emerald_axe": "Смарагдова сокира",
     "item.squaredadditions.emerald_pickaxe": "Смарагдова кирка",
     "item.squaredadditions.rose_gold_ingot": "Злиток рожевого золота",
-    "block.squaredadditions.rose_gold_block": "Кулон з рожевого золота"
+    "block.squaredadditions.rose_gold_block": "Кулон з рожевого золота",
+    "item.squaredadditions.rose_gold_sword": "Меч з рожевого золота",
+    "item.squaredadditions.rose_gold_shovel": "Лопата з рожевого золота",
+    "item.squaredadditions.rose_gold_hoe": "Мотика з рожевим золотом",
+    "item.squaredadditions.rose_gold_axe": "Сокира з рожевого золота",
+    "item.squaredadditions.rose_gold_pickaxe": "Кирка з рожевого золота"
 }
