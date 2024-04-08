@@ -39,7 +39,7 @@
     ·
     <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">Request Feature</a>
     ·
-    <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">Report Translation</a>
+    <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">Request Translation</a>
   </p>
 </div>
 
