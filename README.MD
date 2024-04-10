@@ -149,16 +149,20 @@ If you don't have Minecraft game and want to test this mod or contribute to the 
 Current content:
 - copper, emerald & rose gold tools
 - rose gold ingot & rose gold block
-
+<br />
+<br />
 For info about newest changes, please <a href="https://github.com/xYundy/SquaredAdditions/releases"><strong>check release notes»</strong></a>
+<br />
 For more info about content of this mod, please <a href="https://github.com/xYundy/SquaredAdditions/wiki"><strong>explore the wiki »</strong></a> (WIP)
 
 ### Photo showcase
 
 <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" alt="Rose gold, emerald & copper tools added to the game by Squared Additions mod"/>
-
+<br />
+<br />
 *Work in progress*
-
+<br />
+<br />
 For more screenshots, please <a href="https://modrinth.com/mod/squaredadditions/gallery"><strong>explore the gallery on Modrinth »</strong></a>
 
 ### Video showcase
