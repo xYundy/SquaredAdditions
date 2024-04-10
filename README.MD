@@ -47,7 +47,7 @@
     :star: - The star motivates me a lot! Don't wait and became a <a href="https://github.com/xYundy/SquaredAdditions/stargazers">Stargazer</a>!
     <br />
     <br />
-    The project is part of the competition :medal_sports: [100 commitow](https://100commitow.pl).
+    The project is part of the competition :medal_sports: <a href="https://100commitow.pl">100 commitow</a>.
   </p>
 </div>
 
@@ -156,8 +156,15 @@ For info about newest changes, please <a href="https://github.com/xYundy/Squared
 For more info about content of this mod, please <a href="https://github.com/xYundy/SquaredAdditions/wiki"><strong>explore the wiki »</strong></a> (WIP)
 
 ### Photo showcase
-
-<img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" alt="Rose gold, emerald & copper tools added to the game by Squared Additions mod"/>
+<figure>
+  <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" alt="Rose gold, emerald & copper tools"/>
+  <figcaption>Rose gold, emerald & copper tools added to the game by the mod</figcaption>
+</figure>
+<br />
+<figure>
+  <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/00bd2185848e8be9754f86da1e381934281c854a.png" alt="Rose gold block & rose gold ingot"/>
+  <figcaption>Rose gold block & rose gold ingot</figcaption>
+</figure>
 <br />
 <br />
 *Work in progress*
