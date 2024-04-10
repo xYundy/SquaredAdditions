@@ -46,7 +46,9 @@
     <br />
     :star: - The star motivates me a lot! Don't wait and became a <a href="https://github.com/xYundy/SquaredAdditions/stargazers">Stargazer</a>!
     <br />
-    [![Stargazers repo roster for @xYundy/SquaredAdditions](https://reporoster.com/stars/dark/xYundy/SquaredAdditions)](https://github.com/xYundy/SquaredAdditions/stargazers)
+    <a href="https://github.com/xYundy/SquaredAdditions/stargazers">
+       <img src="https://reporoster.com/stars/dark/xYundy/SquaredAdditions" alt="Stargazers repo roster for @xYundy/SquaredAdditions">
+    </a>
     <br />
     <br />
     The project is part of the competition :medal_sports: <a href="https://100commitow.pl">100 commitow</a>.
