@@ -32,6 +32,8 @@
   <p align="center">
     A Minecraft mod for Fabric modloader which adds new blocks, items & other Vanilla+/Create themed stuff.
     <br />
+    <a href="#installation"><strong>Go to installation guide »</strong></a></li>
+    <br />
     <a href="https://github.com/xYundy/SquaredAdditions/wiki"><strong>Explore the wiki »</strong></a>
     <br />
     <br />
@@ -40,6 +42,12 @@
     <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">Request Feature</a>
     ·
     <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">Request Translation</a>
+    <br />
+    <br />
+    :star: - The star motivates me a lot! Don't wait and became a <a href="https://github.com/xYundy/SquaredAdditions/stargazers">Stargazer</a>!
+    <br />
+    <br />
+    The project is part of the competition :medal_sports: [100 commitow](https://100commitow.pl).
   </p>
 </div>
 
@@ -74,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-I'm playing Minecraft since I was a child. At that time I don't know how to code. Novadays, I'm a PHP developer who still like playing games. 
+I'm a Minecraft player since I was a child. At that time I don't know how to code. Novadays, I'm a PHP developer who still like playing games. 
 When I heard about [_100 commitów_](https://100commitow.pl) contest I have decide to take my chance in it by creating this mod for my favourite game.
 
 I don't code in Java before or create any mod for Minecraft, so this mod will be my first. 
@@ -87,7 +95,6 @@ What I want accomplish by developing this project:
 
 Of course, no one mod will serve all player tastes and/or be "fully completed". So I'll be adding more features in the near future which looks good to me.
 You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this mod!
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +135,7 @@ To install this mod:
 
 If you don't have Minecraft game and want to test this mod or contribute to the project you can:
 1. Clone this repository
-2. Run local dev game version by:
+2. Run local dev version of Minecraft with this mod installed, using one of methods provided below:
    1. Open it using IntelliJ Idea and launch project using `Minecraft Client` and/or `Minecraft Server` configuration.
    2. Use gradlew `runClient` or `runServer` task
 
@@ -139,7 +146,24 @@ If you don't have Minecraft game and want to test this mod or contribute to the 
 <!-- USAGE EXAMPLES -->
 ## Usage & mod content
 
-For more info about content of this mod, please refer to the [Wiki](https://github.com/xYundy/SquaredAdditions/wiki)
+Current content:
+- copper, emerald & rose gold tools
+- rose gold ingot & rose gold block
+
+For info about newest changes, please <a href="https://github.com/xYundy/SquaredAdditions/releases"><strong>check release notes»</strong></a>
+For more info about content of this mod, please <a href="https://github.com/xYundy/SquaredAdditions/wiki"><strong>explore the wiki »</strong></a> (WIP)
+
+### Photo showcase
+
+![](https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png | width=100)
+
+*Work in progress*
+
+For more screenshots, please <a href="https://modrinth.com/mod/squaredadditions/gallery"><strong>explore the gallery on Modrinth »</strong></a>
+
+### Video showcase
+
+*Work in progress*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,6 +173,8 @@ For more info about content of this mod, please refer to the [Wiki](https://gith
 ## Roadmap
 
 See the [open issues](https://github.com/xyundy/squaredadditions/issues) for a full list of proposed features (and known issues).
+
+If you have an idea or sugestion about mod content don't hesitate to <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">tell me more about it</a>!
 
 See the [milestones](https://github.com/xYundy/SquaredAdditions/milestones) for a roadmap of features in next mod versions.
 
