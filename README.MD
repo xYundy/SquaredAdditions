@@ -155,7 +155,7 @@ For more info about content of this mod, please <a href="https://github.com/xYun
 
 ### Photo showcase
 
-![](https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png | width=100)
+<img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" alt="Rose gold, emerald & copper tools added to the game by Squared Additions mod"/>
 
 *Work in progress*
 
