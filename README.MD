@@ -13,12 +13,12 @@
     <a href="https://fabricmc.net/"><img
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_64h.png"
         alt="Available on Fabric"
-        width="200"
+        width="200" height="64"
     ></a>
     <a href="https://modrinth.com/mod/fabric-api"><img
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/requires/fabric-api_64h.png"
         alt="Requires Fabric API"
-        width="200"
+        width="200" height="64"
     ></a>
 <br />
 <br />
