@@ -51,6 +51,8 @@
     <br />
     <a href="https://github.com/xYundy/SquaredAdditions/wiki"><strong>Explore the wiki »</strong></a>
     <br />
+    <a href="https://github.com/users/xYundy/projects/3"><strong>Check the roadmap »</strong></a>
+    <br />
     <br />
     <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">Report Bug</a>
     ·
