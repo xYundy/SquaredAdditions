@@ -219,9 +219,11 @@ For more info about content of this mod, please <a href="https://github.com/xYun
 
 See the [open issues](https://github.com/xyundy/squaredadditions/issues) for a full list of proposed features (and known issues).
 
+For current roadmap (aka working board) see [project kanban board](https://github.com/users/xYundy/projects/3).
+
 If you have an idea or sugestion about mod content don't hesitate to <a href="https://github.com/xYundy/SquaredAdditions/issues/new/choose">tell me more about it</a>!
 
-See the [milestones](https://github.com/xYundy/SquaredAdditions/milestones) for a roadmap of features in next mod versions.
+See the [milestones](https://github.com/xYundy/SquaredAdditions/milestones) for a list of features in next mod versions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
