@@ -21,6 +21,7 @@
         width="200"
     ></a>
 <br />
+<br />
 
 
 <!-- PROJECT SHIELDS -->
@@ -143,6 +144,7 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 
 ### Installation
 
+#### Available on mod platforms
 <div align="center">
 <br />
     <a href="https://modrinth.com/mod/squaredadditions"><img
@@ -153,7 +155,7 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 <br />
 </div>
 
-
+#### Installation instructions
 To install this mod:
 1. Download this mod
    1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or [Modrinth](https://modrinth.com/mod/squaredadditions).
