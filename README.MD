@@ -9,6 +9,18 @@
 
 <h3 align="center">Squared Additions</h3>
 
+<br />
+    <a href="https://fabricmc.net/"><img
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_64h.png"
+        alt="Available on Fabric"
+        width="200"
+    ></a>
+    <a href="https://modrinth.com/mod/fabric-api"><img
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/requires/fabric-api_64h.png"
+        alt="Requires Fabric API"
+        width="200"
+    ></a>
+<br />
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -129,6 +141,17 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 
 ### Installation
 
+<div align="center">
+<br />
+    <a href="https://modrinth.com/mod/squaredadditions"><img
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_64h.png"
+        alt="Available on Modinth"
+        width="200"
+    ></a>
+<br />
+</div>
+
+
 To install this mod:
 1. Download this mod
    1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or [Modrinth](https://modrinth.com/mod/squaredadditions).
@@ -162,8 +185,7 @@ For more info about content of this mod, please <a href="https://github.com/xYun
 ### Photo showcase
 <figure>
   <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" alt="Rose gold, emerald & copper tools"/>
-  <figcaption>Rose gold, emerald & copper tools added to the game by the mod</figcaption>
-</figure>
+  <figcaption><small>Rose gold, emerald & copper tools added to the game by the mod<small></figcaption>
 <br />
 <figure>
   <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/00bd2185848e8be9754f86da1e381934281c854a.png" alt="Rose gold block & rose gold ingot"/>
@@ -174,7 +196,9 @@ For more info about content of this mod, please <a href="https://github.com/xYun
 *Work in progress*
 <br />
 <br />
-For more screenshots, please <a href="https://modrinth.com/mod/squaredadditions/gallery"><strong>explore the gallery on Modrinth »</strong></a>
+<a href="https://modrinth.com/mod/squaredadditions/gallery">
+    <img alt="modrinth-gallery" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_64h.png">
+</a>
 
 ### Video showcase
 
