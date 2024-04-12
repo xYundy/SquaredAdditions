@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/xYundy/SquaredAdditions">
-    <img src=".github/assets/logo.png" alt="Logo" width="180" height="180">
+    <img src=".github/assets/logo.png" alt="SquaredAdditions Logo" width="180" height="180">
   </a>
 
 <h3 align="center">Squared Additions</h3>
