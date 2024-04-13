@@ -154,13 +154,20 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
         alt="Available on Modinth"
         width="200"
     ></a>
+    
+   <a href="https://legacy.curseforge.com/minecraft/mc-mods/squared-addictions"><img
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_64h.png"
+        alt="Available on Modinth"
+        width="200"
+    ></a>
+
 <br />
 </div>
 
 #### Installation instructions
 To install this mod:
 1. Download this mod
-   1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml) or [Modrinth](https://modrinth.com/mod/squaredadditions).
+   1. from [releases](https://github.com/xYundy/SquaredAdditions/releases), [latest build action](https://github.com/xYundy/SquaredAdditions/actions/workflows/build.yml), [Modrinth](https://modrinth.com/mod/squaredadditions) or [Curse Forge](https://legacy.curseforge.com/minecraft/mc-mods/squared-addictions).
    2. or "one-click download and install" using your Minecraft launcher (ex. [Modrinth Launcher](https://modrinth.com/app), [Prism Launcher](https://prismlauncher.org))
 2. Place mod `.jar` file in `mods` folder
 3. Launch the game
