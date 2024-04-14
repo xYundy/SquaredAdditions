@@ -47,6 +47,15 @@ public class ModItems {
     public static final Item ROSE_GOLD_HOE = registerItem("rose_gold_hoe",
             new HoeItem(ModToolMaterial.ROSE_GOLD_INGOT, -1, -3.0F, new FabricItemSettings()));
 
+    public static final Item ROSE_GOLD_HELMET = registerItem("rose_gold_helmet",
+            new ArmorItem(ModArmorMaterial.ROSE_GOLD, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_CHESTPLATE = registerItem("rose_gold_chestplate",
+            new ArmorItem(ModArmorMaterial.ROSE_GOLD, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_LEGGINGS = registerItem("rose_gold_leggings",
+            new ArmorItem(ModArmorMaterial.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ROSE_GOLD_BOOTS = registerItem("rose_gold_boots",
+            new ArmorItem(ModArmorMaterial.ROSE_GOLD, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SquaredAdditions.MOD_ID, name), item);
     }
@@ -61,6 +70,11 @@ public class ModItems {
 
         entries.add(ROSE_GOLD_SWORD);
         entries.add(ROSE_GOLD_AXE);
+
+        entries.add(ROSE_GOLD_HELMET);
+        entries.add(ROSE_GOLD_CHESTPLATE);
+        entries.add(ROSE_GOLD_LEGGINGS);
+        entries.add(ROSE_GOLD_BOOTS);
     }
     public static void itemGroupTools(FabricItemGroupEntries entries) {
         entries.add(COPPER_PICKAXE);
