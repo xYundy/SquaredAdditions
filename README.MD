@@ -195,19 +195,13 @@ For info about newest changes, please <a href="https://github.com/xYundy/Squared
 For more info about content of this mod, please <a href="https://github.com/xYundy/SquaredAdditions/wiki"><strong>explore the wiki »</strong></a> (WIP)
 
 ### Photo showcase
-<figure>
-  <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" alt="Rose gold, emerald & copper tools"/>
-  <figcaption><small>Rose gold, emerald & copper tools added to the game by the mod<small></figcaption>
-<br />
-<figure>
-  <img src="https://cdn.modrinth.com/data/uUiBMoXL/images/00bd2185848e8be9754f86da1e381934281c854a.png" alt="Rose gold block & rose gold ingot"/>
-  <figcaption>Rose gold block & rose gold ingot</figcaption>
-</figure>
-<br />
-<br />
-*Work in progress*
-<br />
-<br />
+<p align="center">
+<img src="https://cdn.modrinth.com/data/uUiBMoXL/images/403fa00197ceb5d88d8577e89855a7f32ab751d6.png" width="90%"/>
+<img src="https://cdn.modrinth.com/data/uUiBMoXL/images/5eca8996623b00150e02d0f9d5ac419e2f9d0b00.png" width="90%"/>
+<img src="https://cdn.modrinth.com/data/uUiBMoXL/images/61f21217a7d37eb1c2bce0a01810230b44ca58b3.png" width="90%"/>
+<img src="https://cdn.modrinth.com/data/uUiBMoXL/images/00bd2185848e8be9754f86da1e381934281c854a.png" width="90%"/>
+</p>
+
 <a href="https://modrinth.com/mod/squaredadditions/gallery">
     <img alt="modrinth-gallery" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_64h.png">
 </a>
