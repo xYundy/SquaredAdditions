@@ -4,8 +4,6 @@
     "_comment2": "Copying English entries will cause them to become outdated when this file changes",
     "_comment3": "Untranslated entries will automatically be inherited from this file.",
     "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
-    "_comment5": "Nota per i traduttori: NON COPIARE ENTITLE DALL'INGLESE",
-
     "item.squaredadditions.copper_sword": "Spada di rame",
     "item.squaredadditions.copper_shovel": "Pala di rame",
     "item.squaredadditions.copper_hoe": "Zappa di rame",
@@ -22,5 +20,9 @@
     "item.squaredadditions.rose_gold_shovel": "Pala in oro rosa",
     "item.squaredadditions.rose_gold_hoe": "Zappa in oro rosa",
     "item.squaredadditions.rose_gold_axe": "Ascia in oro rosa",
-    "item.squaredadditions.rose_gold_pickaxe": "Piccone d'oro rosa"
+    "item.squaredadditions.rose_gold_pickaxe": "Piccone d'oro rosa",
+    "item.squaredadditions.rose_gold_helmet": "Elmo Oro Rosa",
+    "item.squaredadditions.rose_gold_chestplate": "Corazza Oro Rosa",
+    "item.squaredadditions.rose_gold_leggings": "Pantaloni Oro Rosa",
+    "item.squaredadditions.rose_gold_boots": "Stivali Oro Rosa"
 }
