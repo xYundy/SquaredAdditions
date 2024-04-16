@@ -43,7 +43,6 @@ jobs:
                   pull_request_body: 'New Crowdin pull request with translations'
                   pull_request_base_branch_name: 'main'
                   skip_untranslated_strings: true
-                  skip_untranslated_files: true
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                   CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
