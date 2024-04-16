@@ -15,5 +15,13 @@
     "item.squaredadditions.rose_gold_shovel": "Rosengold Schaufel",
     "item.squaredadditions.rose_gold_hoe": "Rosengold Hacke",
     "item.squaredadditions.rose_gold_axe": "Rosengold Axt",
-    "item.squaredadditions.rose_gold_pickaxe": "Rosengold Spitzhacke"
+    "item.squaredadditions.rose_gold_pickaxe": "Rosengold Spitzhacke",
+    "item.squaredadditions.rose_gold_helmet": "Rosengoldhelm",
+    "item.squaredadditions.rose_gold_chestplate": "Rosengoldbrustplatte",
+    "item.squaredadditions.rose_gold_leggings": "Rosengoldbeinschutz",
+    "item.squaredadditions.rose_gold_boots": "Rosengoldenstiefel",
+    "item.squaredadditions.emerald_helmet": "Smaragdhelm",
+    "item.squaredadditions.emerald_chestplate": "Smaragdbrustplatte",
+    "item.squaredadditions.emerald_leggings": "Smaragdbeinschutz",
+    "item.squaredadditions.emerald_boots": "Smaragdstiefel"
 }
