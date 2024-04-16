@@ -1,9 +1,9 @@
 {
-    "_comment0": "Note to translators: DO NOT COPY ENTRIES FROM ENGLISH",
-    "_comment1": "I repeat: do NOT copy entries from English!!",
-    "_comment2": "Copying English entries will cause them to become outdated when this file changes",
-    "_comment3": "Untranslated entries will automatically be inherited from this file.",
-    "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
+    "_comment0": "Notatka dla tłumaczy: NIE KOPIUJ WPISÓW Z JĘZYKA ANGIELSKIEGO",
+    "_comment1": "Powtarzam: NIE KOPIUJ wpisów z języka angielskiego!!",
+    "_comment2": "Skopiowanie spowoduje, że w chwili aktualizacji tłumaczenia przestanie być ono aktualne",
+    "_comment3": "Nieprzetłumaczone frazy automatycznie zostaną zaciągnięte z wersji angielskiej przez grę.",
+    "_comment4": "Raz jeszcze proszę, nie kopiuj wpisów z języka angielskiego i DZIĘKUJĘ za Twoją cenną pracę!",
     "item.squaredadditions.copper_sword": "Miedziany miecz",
     "item.squaredadditions.copper_shovel": "Miedziana łopata",
     "item.squaredadditions.copper_hoe": "Miedziana motyka",
@@ -24,5 +24,9 @@
     "item.squaredadditions.rose_gold_helmet": "Różowozłoty hełm",
     "item.squaredadditions.rose_gold_chestplate": "Różowozłoty napierśnik",
     "item.squaredadditions.rose_gold_leggings": "Różowozłote nogawice",
-    "item.squaredadditions.rose_gold_boots": "Różowozłote buty"
+    "item.squaredadditions.rose_gold_boots": "Różowozłote buty",
+    "item.squaredadditions.emerald_helmet": "Szmaragdowy hełm",
+    "item.squaredadditions.emerald_chestplate": "Szmaragdowy napierśnik",
+    "item.squaredadditions.emerald_leggings": "Szmaragdowe nogawice",
+    "item.squaredadditions.emerald_boots": "Szmaragdowe buty"
 }

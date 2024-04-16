@@ -1,9 +1,4 @@
 {
-    "_comment0": "Note to translators: DO NOT COPY ENTRIES FROM ENGLISH",
-    "_comment1": "I repeat: do NOT copy entries from English!!",
-    "_comment2": "Copying English entries will cause them to become outdated when this file changes",
-    "_comment3": "Untranslated entries will automatically be inherited from this file.",
-    "_comment4": "Once again, don't copy from English, and THANK YOU for your hard work!",
     "item.squaredadditions.copper_sword": "Medený meč",
     "item.squaredadditions.copper_shovel": "Medená lopata",
     "item.squaredadditions.copper_hoe": "Medená motyka",
@@ -16,13 +11,8 @@
     "item.squaredadditions.emerald_pickaxe": "Smaragdový krompáč",
     "item.squaredadditions.rose_gold_ingot": "Zliatok ružového zlata",
     "block.squaredadditions.rose_gold_block": "Blok ružového zlata",
-    "item.squaredadditions.rose_gold_sword": "Rose Gold Sword",
     "item.squaredadditions.rose_gold_shovel": "Ružovo-zlatý meč",
     "item.squaredadditions.rose_gold_hoe": "Ružovo-zlatá motyka",
     "item.squaredadditions.rose_gold_axe": "Ružovo-zlatá sekera",
-    "item.squaredadditions.rose_gold_pickaxe": "Ružovo-zlatý krompáč",
-    "item.squaredadditions.rose_gold_helmet": "Rose Gold Helmet",
-    "item.squaredadditions.rose_gold_chestplate": "Rose Gold Chestplate",
-    "item.squaredadditions.rose_gold_leggings": "Rose Gold Leggings",
-    "item.squaredadditions.rose_gold_boots": "Rose Gold Boots"
+    "item.squaredadditions.rose_gold_pickaxe": "Ružovo-zlatý krompáč"
 }
