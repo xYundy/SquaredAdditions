@@ -152,12 +152,12 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
     <a href="https://modrinth.com/mod/squaredadditions"><img
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_64h.png"
         alt="Available on Modinth"
-        width="200"
+        width="200" height="64"
     ></a>
    <a href="https://www.curseforge.com/minecraft/mc-mods/squared-additions"><img
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_64h.png"
         alt="Available on Modinth"
-        width="200"
+        width="200" height="64"
     ></a>
 
 <br />
