@@ -188,6 +188,8 @@ If you don't have Minecraft game and want to test this mod or contribute to the 
 Current content:
 - copper, emerald & rose gold tools
 - rose gold ingot & rose gold block
+- emerald & rose gold armor
+
 <br />
 <br />
 For info about newest changes, please <a href="https://github.com/xYundy/SquaredAdditions/releases"><strong>check release notes»</strong></a>
