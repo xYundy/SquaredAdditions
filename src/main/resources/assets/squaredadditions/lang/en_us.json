@@ -29,5 +29,17 @@
     "item.squaredadditions.emerald_helmet": "Emerald Helmet",
     "item.squaredadditions.emerald_chestplate": "Emerald Chestplate",
     "item.squaredadditions.emerald_leggings": "Emerald Leggings",
-    "item.squaredadditions.emerald_boots": "Emerald Boots"
+    "item.squaredadditions.emerald_boots": "Emerald Boots",
+    "squaredadditions.midnightconfig.title": "Squared Additions",
+    "squaredadditions.midnightconfig.suppressStatementAPILogger": "Suppress Statement API's Logger?",
+    "squaredadditions.midnightconfig.showEnhancedSlabLines": "Show enhanced slab lines?",
+    "key.squaredadditions.slab_lock": "Slab placing lock",
+    "text.squaredadditions.slab_lock.DEFAULT_AUTO": "Auto placement",
+    "text.squaredadditions.slab_lock.BOTTOM_SLAB": "Bottom slab",
+    "text.squaredadditions.slab_lock.TOP_SLAB": "Top slab",
+    "text.squaredadditions.slab_lock.NORTH_SLAB_VERTICAL": "North slab (Vertical)",
+    "text.squaredadditions.slab_lock.SOUTH_SLAB_VERTICAL": "South slab (Vertical)",
+    "text.squaredadditions.slab_lock.EAST_SLAB_VERTICAL": "East slab (Vertical)",
+    "text.squaredadditions.slab_lock.WEST_SLAB_VERTICAL": "West slab (Vertical)",
+    "text.squaredadditions.slab_lock.VANILLA_PLACEMENT": "Vanilla way placement"
 }

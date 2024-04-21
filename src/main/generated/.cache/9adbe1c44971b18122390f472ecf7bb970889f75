@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-16T17:31:19.258581	Squared Additions/Model Definitions
+// 1.20.1	2024-04-21T20:16:22.266104	Squared Additions/Model Definitions
 d97cd135a1d1c8eb28af46cab9ff76d836285d5b assets/squaredadditions/models/item/emerald_chestplate.json
 6f15bf8607ada3d987a355d2f2a351969840e7e1 assets/squaredadditions/models/item/emerald_sword.json
 9aaf794951e9b2e1e42225b4cff902c199483758 assets/squaredadditions/models/item/emerald_leggings.json
@@ -6,10 +6,10 @@ f6d93aff2c2a7ee3e0f25897e8bd9c986ae407d5 assets/squaredadditions/blockstates/ros
 cbae0d76c7081cc2a6373ced0f6186dc4551aa9d assets/squaredadditions/models/item/emerald_axe.json
 176ad04c6ba42342adc0e6c5fd107be0e63c65b6 assets/squaredadditions/models/item/emerald_hoe.json
 7e938224de995d5a7b45865c9a3f8181e1c60371 assets/squaredadditions/models/item/rose_gold_boots.json
-1dfb1fd2cf649a277202c40ac31e4976fa410b6c assets/squaredadditions/models/item/rose_gold_leggings.json
 12047fd9df8844630b95d8484150f8da8291f3eb assets/squaredadditions/models/item/rose_gold_hoe.json
-c6e40631f77833c121192098a1fe019f0572a914 assets/squaredadditions/models/item/rose_gold_axe.json
+1dfb1fd2cf649a277202c40ac31e4976fa410b6c assets/squaredadditions/models/item/rose_gold_leggings.json
 0aa7b4259ef0cf273586e6aa78649b2887b01a87 assets/squaredadditions/models/item/rose_gold_ingot.json
+c6e40631f77833c121192098a1fe019f0572a914 assets/squaredadditions/models/item/rose_gold_axe.json
 d78948e974a2e61bfaa7452b3087855095fda779 assets/squaredadditions/models/item/rose_gold_shovel.json
 f561fe51b5655850cc8156c04655627423215045 assets/squaredadditions/models/item/rose_gold_chestplate.json
 71776dfec5b5f01ce4a9d3b3e000c3bf53bd5bf5 assets/squaredadditions/models/item/copper_shovel.json

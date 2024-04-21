@@ -20,6 +20,21 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven {
+		url "https://jitpack.io"
+	}
+
+	maven {
+		url "https://maven.terraformersmc.com/releases/"
+	}
+
+	maven {
+		url = uri("https://ueaj.dev/maven")
+	}
+
+	maven {
+		url = "https://api.modrinth.com/maven"
+	}
 }
 
 loom {
@@ -51,6 +66,16 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+	include modApi("com.github.Virtuoel:Statement:${project.statement_version}", {
+		exclude group: "net.fabricmc.fabric-api"
+	})
+
+	include modApi("net.devtech:arrp:${project.arrp_version}")
+
+	modImplementation ("com.terraformersmc:modmenu:${project.modmenu_version}") {
+		exclude module: "fabric-api"
+	}
+	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 }
 
 processResources {
