@@ -125,6 +125,8 @@ You may also suggest changes by forking this repo and creating a pull request or
 
 * [![IntelliJIdea][IntelliJIdea]][IntelliJIdea-url]
 * [![Fabric][Fabric]][Fabric-url]
+* [MidnightLib](https://www.midnightdust.eu/midnightlib/)
+* [ARRP](https://github.com/Devan-Kerman/ARRP)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,6 +191,7 @@ Current content:
 - copper, emerald & rose gold tools
 - rose gold ingot & rose gold block
 - emerald & rose gold armor
+- **Vertical Slabs**
 
 <br />
 <br />
@@ -281,6 +284,7 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 * [Blockbench](https://www.blockbench.net) - A low-poly 3D model editor
 * [Img Shields](https://shields.io)
 * [Piskel](https://www.piskelapp.com/p/create/sprite)
+* 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
