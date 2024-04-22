@@ -144,7 +144,11 @@ To use this mod you need to install it to your Minecraft Java Edition instance w
 
 #### Required mods
 
-* Fabric API
+* [Fabric API](https://modrinth.com/mod/fabric-api)
+
+#### Optional mods
+
+* [Mod Menu](https://modrinth.com/mod/modmenu)
 
 ### Installation
 
