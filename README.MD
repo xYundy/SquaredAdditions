@@ -125,8 +125,8 @@ You may also suggest changes by forking this repo and creating a pull request or
 
 * [![IntelliJIdea][IntelliJIdea]][IntelliJIdea-url]
 * [![Fabric][Fabric]][Fabric-url]
-* [MidnightLib](https://www.midnightdust.eu/midnightlib/)
-* [ARRP](https://github.com/Devan-Kerman/ARRP)
+* [![MidnightLib][MidnightLib]][MidnightLib-url]
+* [![ARRP][ARRP]][ARRP-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -321,3 +321,9 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 [IntelliJIdea-url]: https://www.jetbrains.com/idea/
 [Fabric]: https://img.shields.io/badge/Fabric_Mod_Loader-20232A?style=for-the-badge
 [Fabric-url]: https://fabricmc.net/
+[MidnightLib]: https://img.shields.io/badge/MidnightLib-20232A?style=for-the-badge
+[MidnightLib-url]: https://www.midnightdust.eu/midnightlib/
+[Fabric]: https://img.shields.io/badge/Fabric_Mod_Loader-20232A?style=for-the-badge
+[Fabric-url]: https://fabricmc.net/
+[ARRP]: https://img.shields.io/badge/ARRP-20232A?style=for-the-badge
+[ARRP-url]: https://github.com/Devan-Kerman/ARRP
