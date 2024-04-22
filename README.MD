@@ -284,7 +284,7 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 * [Blockbench](https://www.blockbench.net) - A low-poly 3D model editor
 * [Img Shields](https://shields.io)
 * [Piskel](https://www.piskelapp.com/p/create/sprite)
-* 
+* [Andrew Grant](https://github.com/Andrew6rant) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
