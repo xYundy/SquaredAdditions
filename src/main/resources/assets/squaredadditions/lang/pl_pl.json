@@ -28,5 +28,17 @@
     "item.squaredadditions.emerald_helmet": "Szmaragdowy hełm",
     "item.squaredadditions.emerald_chestplate": "Szmaragdowy napierśnik",
     "item.squaredadditions.emerald_leggings": "Szmaragdowe nogawice",
-    "item.squaredadditions.emerald_boots": "Szmaragdowe buty"
+    "item.squaredadditions.emerald_boots": "Szmaragdowe buty",
+    "squaredadditions.midnightconfig.title": "Squared Additions",
+    "squaredadditions.midnightconfig.suppressStatementAPILogger": "Wyciszyć Statement API's Logger?",
+    "squaredadditions.midnightconfig.showEnhancedSlabLines": "Pokazywać ulepszone linie płyt?",
+    "key.squaredadditions.slab_lock": "Tryb ustawiania płyt",
+    "text.squaredadditions.slab_lock.DEFAULT_AUTO": "Automatyczne układanie płyt",
+    "text.squaredadditions.slab_lock.BOTTOM_SLAB": "Dolna płyta",
+    "text.squaredadditions.slab_lock.TOP_SLAB": "Górna płyta",
+    "text.squaredadditions.slab_lock.NORTH_SLAB_VERTICAL": "Północna płyta (Pionowo)",
+    "text.squaredadditions.slab_lock.SOUTH_SLAB_VERTICAL": "Południowa płyta (Pionowo)",
+    "text.squaredadditions.slab_lock.EAST_SLAB_VERTICAL": "Wschodnia płyta (Pionowo)",
+    "text.squaredadditions.slab_lock.WEST_SLAB_VERTICAL": "Zachodnia płyta (Pionowo)",
+    "text.squaredadditions.slab_lock.VANILLA_PLACEMENT": "Domyślne układanie płyt (Vanilla)"
 }
