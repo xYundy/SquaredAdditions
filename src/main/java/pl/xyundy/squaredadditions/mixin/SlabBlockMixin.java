@@ -27,6 +27,8 @@ import static pl.xyundy.squaredadditions.slabs.Util.TYPE;
 import static pl.xyundy.squaredadditions.slabs.Util.VERTICAL_TYPE;
 import static net.minecraft.block.enums.SlabType.TOP;
 
+// Massive thanks to andrew6rant for a lot of code behind this mixin
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/mixin/SlabBlockMixin.java
 @Mixin(SlabBlock.class)
 public class SlabBlockMixin extends Block implements Waterloggable {
 

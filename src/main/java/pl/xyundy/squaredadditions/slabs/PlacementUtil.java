@@ -29,6 +29,8 @@ import static net.minecraft.block.SlabBlock.TYPE;
 import static net.minecraft.block.SlabBlock.WATERLOGGED;
 import static net.minecraft.block.enums.SlabType.TOP;
 
+// Massive thanks to andrew6rant for this code
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/PlacementUtil.java
 public class PlacementUtil {
 
     public static boolean calcPaneCanConnectToVerticalSlab(Direction paneDirection, BlockState offsetState, boolean sideSolidFullSquare) {

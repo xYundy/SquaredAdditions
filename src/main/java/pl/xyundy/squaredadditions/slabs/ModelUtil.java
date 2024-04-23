@@ -9,6 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 
+// Massive thanks to andrew6rant for this code
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/ModelUtil.java
 public class ModelUtil {
     public static void setup(RuntimeResourcePack AUTO_SLABS_RESOURCES, Block block) {
         Identifier id = Registries.BLOCK.getId(block);

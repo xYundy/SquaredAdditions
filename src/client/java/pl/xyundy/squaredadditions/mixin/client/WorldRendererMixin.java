@@ -24,6 +24,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import static pl.xyundy.squaredadditions.SquaredAdditionsClient.clientSlabLockPosition;
 import static pl.xyundy.squaredadditions.config.SquaredAdditionsConfig.showEnhancedSlabLines;
 
+// Massive thanks to andrew6rant for a lot of code behind this mixin
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/mixin/WorldRendererMixin.java
 @Mixin(WorldRenderer.class)
 public class WorldRendererMixin {
 

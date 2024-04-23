@@ -29,6 +29,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import static pl.xyundy.squaredadditions.slabs.Util.VERTICAL_TYPE;
 import static net.minecraft.block.SlabBlock.TYPE;
 
+// Massive thanks to andrew6rant for a lot of code behind this mixin
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/mixin/BlockRenderManagerMixin.java
 @Mixin(BlockRenderManager.class)
 public class BlockRenderManagerMixin {
 

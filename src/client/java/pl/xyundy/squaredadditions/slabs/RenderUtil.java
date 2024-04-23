@@ -25,7 +25,8 @@ import java.util.Objects;
 import static pl.xyundy.squaredadditions.SquaredAdditionsClient.clientSlabLockPosition;
 import static pl.xyundy.squaredadditions.slabs.Util.*;
 
-// massive thanks to Andrew for this code
+// Massive thanks to andrew6rant & Schauwegfor this code
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/Util.java
 public class RenderUtil {
 
     public static void drawSlabIcon(PlayerEntity player, DrawContext context, int u, int v) {

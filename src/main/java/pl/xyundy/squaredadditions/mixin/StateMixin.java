@@ -14,6 +14,8 @@ import virtuoel.statement.util.StatementStateExtensions;
 import java.util.HashMap;
 import java.util.Map;
 
+// Massive thanks to andrew6rant for a lot of code behind this mixin
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/mixin/StateMixin.java
 @Mixin(State.class)
 public class StateMixin<O, S> implements StatementStateExtensions<S> {
 
@@ -39,9 +41,7 @@ public class StateMixin<O, S> implements StatementStateExtensions<S> {
         //In order to suppress Statement API's logger based on a config value the config must be initialized here
         SquaredAdditionsConfig.init(SquaredAdditions.MOD_ID, SquaredAdditionsConfig.class);
         if (SquaredAdditionsConfig.suppressStatementAPILogger) {
-            Statement.LOGGER.warn("Statement API's logging has been disabled by AutoSlabs!");
-        } else {
-            Statement.LOGGER.warn("AutoSlabs: don't worry about these errors :)");
+            Statement.LOGGER.warn("Statement API's logging has been disabled!");
         }
     }
 

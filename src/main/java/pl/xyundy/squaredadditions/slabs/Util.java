@@ -18,7 +18,8 @@ import java.util.Optional;
 
 import static pl.xyundy.squaredadditions.slabs.Slabs.SLABS_RESOURCES;
 
-// massive thanks to Schauweg for some of this code
+// Massive thanks to andrew6rant & Schauwegfor this code
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/Util.java
 public class Util {
 
     public static final EnumProperty<VerticalType> VERTICAL_TYPE;

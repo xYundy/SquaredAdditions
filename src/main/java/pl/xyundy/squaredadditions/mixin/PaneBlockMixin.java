@@ -18,6 +18,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
+// Massive thanks to andrew6rant for a lot of code behind this mixin
+// https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/mixin/PaneBlockMixin.java
 @Mixin(PaneBlock.class)
 public class PaneBlockMixin extends HorizontalConnectingBlock {
 
