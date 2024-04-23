@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.fabric.impl.client.rendering.BlockEntityRendererRegistryImpl;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.block.SlabBlock;
@@ -20,7 +21,10 @@ import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
+import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntityRenderer;
 import pl.xyundy.squaredadditions.slabs.SlabLockEnum;
+
+import static pl.xyundy.squaredadditions.block.ModBlocks.MIXED_SLAB_BLOCK_ENTITY;
 
 public class SquaredAdditionsClient implements ClientModInitializer {
 	final ModContainer container = FabricLoader.getInstance().getModContainer(SquaredAdditions.MOD_ID).get();
@@ -47,6 +51,9 @@ public class SquaredAdditionsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("squaredadditions", "slabs"), container, Text.literal("Squared Additions Slabs (Built-In)"), ResourcePackActivationType.DEFAULT_ENABLED);
+
+
+		BlockEntityRendererRegistryImpl.register(MIXED_SLAB_BLOCK_ENTITY, MixedSlabBlockEntityRenderer::new);
 
 		HudRenderCallback.EVENT.register((context, tickDelta) -> {
 

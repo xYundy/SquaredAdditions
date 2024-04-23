@@ -9,6 +9,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.BlockTags;
@@ -20,7 +22,11 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.RaycastContext;
+import pl.xyundy.squaredadditions.block.MixedSlabBlock;
+import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 
+import static net.minecraft.state.property.Properties.SLAB_TYPE;
+import static pl.xyundy.squaredadditions.block.ModBlocks.MIXED_SLAB_BLOCK;
 import static pl.xyundy.squaredadditions.slabs.Util.*;
 import static pl.xyundy.squaredadditions.slabs.VerticalType.*;
 import static net.minecraft.block.LightBlock.LEVEL_15;
@@ -224,8 +230,10 @@ public class PlacementUtil {
             return false;
         }
         ItemStack itemStack = context.getStack();
+        Item item = itemStack.getItem();
+
         SlabType slabType = state.get(TYPE);
-        if (slabType != SlabType.DOUBLE && itemStack.isOf(state.getBlock().asItem())) {
+        if (slabType != SlabType.DOUBLE && (item instanceof BlockItem && ((BlockItem) item).getBlock() instanceof SlabBlock)) {
             if (context.canReplaceExisting()) {
                 BlockHitResult blockHitResult = PlacementUtil.calcRaycast(player);
                 HitPart part = getHitPart(blockHitResult);
@@ -333,6 +341,10 @@ public class PlacementUtil {
                 return blockState.with(TYPE, SlabType.DOUBLE).with(WATERLOGGED, false);
             }
             if (part == HitPart.CENTER) {
+                if (blockState.getBlock() instanceof SlabBlock && blockState.getBlock().getDefaultState() != state) {
+                    System.out.println("WOLOLO");
+                    return ((MixedSlabBlock)MIXED_SLAB_BLOCK).getDefaultStateWithSlabStates(blockState, state.with(SLAB_TYPE, TOP));
+                }
                 return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
             } else if (part == HitPart.BOTTOM) {
                 return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
