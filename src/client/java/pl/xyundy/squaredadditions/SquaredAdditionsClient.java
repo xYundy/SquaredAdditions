@@ -8,12 +8,12 @@ import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
-import net.fabricmc.fabric.impl.client.rendering.BlockEntityRendererRegistryImpl;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
@@ -52,8 +52,7 @@ public class SquaredAdditionsClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("squaredadditions", "slabs"), container, Text.literal("Squared Additions Slabs (Built-In)"), ResourcePackActivationType.DEFAULT_ENABLED);
 
-
-		BlockEntityRendererRegistryImpl.register(MIXED_SLAB_BLOCK_ENTITY, MixedSlabBlockEntityRenderer::new);
+		BlockEntityRendererFactories.register(MIXED_SLAB_BLOCK_ENTITY, MixedSlabBlockEntityRenderer::new);
 
 		HudRenderCallback.EVENT.register((context, tickDelta) -> {
 
