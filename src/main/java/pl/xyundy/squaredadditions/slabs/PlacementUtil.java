@@ -23,7 +23,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.RaycastContext;
 import pl.xyundy.squaredadditions.block.MixedSlabBlock;
-import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 
 import static net.minecraft.block.enums.SlabType.BOTTOM;
 import static net.minecraft.state.property.Properties.SLAB_TYPE;
