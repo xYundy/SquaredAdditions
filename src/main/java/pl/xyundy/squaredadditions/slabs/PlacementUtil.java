@@ -25,13 +25,12 @@ import static net.minecraft.state.property.Properties.SLAB_TYPE;
 import static pl.xyundy.squaredadditions.block.ModBlocks.MIXED_SLAB_BLOCK;
 import static pl.xyundy.squaredadditions.slabs.Util.*;
 import static pl.xyundy.squaredadditions.slabs.VerticalType.*;
-import static net.minecraft.block.LightBlock.LEVEL_15;
 import static net.minecraft.block.PaneBlock.cannotConnect;
 import static net.minecraft.block.SlabBlock.TYPE;
 import static net.minecraft.block.SlabBlock.WATERLOGGED;
 import static net.minecraft.block.enums.SlabType.TOP;
 
-// Massive thanks to andrew6rant for this code
+// Massive thanks to andrew6rant for big part of this code
 // https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/PlacementUtil.java
 public class PlacementUtil {
 
@@ -326,102 +325,87 @@ public class PlacementUtil {
             return null;
         }
 
-        return switch (ctxSide) {
-            case UP -> calcUpPlacement(blockState, state, part, fluidState);
-            case DOWN -> calcDownPlacement(blockState, state, part, fluidState);
-            case NORTH -> calcNorthPlacement(blockState, state, part, fluidState);
-            case SOUTH -> calcSouthPlacement(blockState, state, part, fluidState);
-            case EAST -> calcEastPlacement(blockState, state, part, fluidState);
-            case WEST -> calcWestPlacement(blockState, state, part, fluidState);
-        };
+        return calcPlacement(ctxSide, state, part, fluidState);
     }
 
-    public static BlockState calcUpPlacement(BlockState blockState, BlockState state, HitPart part, FluidState fluidState) {
+    private static BlockState calcPlacement(Direction placementDirection, BlockState state, HitPart part, FluidState fluidState) {
         if (part == HitPart.CENTER) {
-            return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.BOTTOM) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.TOP) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.LEFT) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.RIGHT) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+            switch (placementDirection) {
+                case DOWN -> {
+                    return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case UP -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case NORTH -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case SOUTH -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case WEST -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case EAST -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+            }
         }
-        return null;
-    }
 
-    public static BlockState calcDownPlacement(BlockState blockState, BlockState state, HitPart part, FluidState fluidState) {
-        if (part == HitPart.CENTER) {
-            return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.BOTTOM) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.TOP) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.LEFT) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.RIGHT) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+        if (part == HitPart.BOTTOM) {
+            switch (placementDirection) {
+                case DOWN, UP -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                default -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+            }
         }
-        return null;
-    }
 
-    public static BlockState calcNorthPlacement(BlockState blockState, BlockState state, HitPart part, FluidState fluidState) {
-        if (part == HitPart.CENTER) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.BOTTOM) {
-            return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.TOP) {
-            return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.LEFT) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.RIGHT) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+        if (part == HitPart.TOP) {
+            switch (placementDirection) {
+                case DOWN, UP -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                default -> {
+                    return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+            }
         }
-        return null;
-    }
 
-    public static BlockState calcSouthPlacement(BlockState blockState, BlockState state, HitPart part, FluidState fluidState) {
-        if (part == HitPart.CENTER) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.BOTTOM) {
-            return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.TOP) {
-            return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.LEFT) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.RIGHT) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+        if (part == HitPart.LEFT) {
+            switch (placementDirection) {
+                case UP, NORTH -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case DOWN, SOUTH -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case EAST -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case WEST -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+            }
         }
-        return null;
-    }
 
-    public static BlockState calcEastPlacement(BlockState blockState, BlockState state, HitPart part, FluidState fluidState) {
-        if (part == HitPart.CENTER) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.BOTTOM) {
-            return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.TOP) {
-            return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.LEFT) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.RIGHT) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        }
-        return null;
-    }
-
-    public static BlockState calcWestPlacement(BlockState blockState, BlockState state, HitPart part, FluidState fluidState) {
-        if (part == HitPart.CENTER) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.BOTTOM) {
-            return state.with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.TOP) {
-            return state.with(TYPE, SlabType.TOP).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.LEFT) {
-            return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        } else if (part == HitPart.RIGHT) {
-            return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+        if (part == HitPart.RIGHT) {
+            switch (placementDirection) {
+                case UP, NORTH -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case DOWN, SOUTH -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, VerticalType.EAST_WEST).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case EAST -> {
+                    return state.with(TYPE, SlabType.TOP).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+                case WEST -> {
+                    return state.with(TYPE, SlabType.BOTTOM).with(VERTICAL_TYPE, NORTH_SOUTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+                }
+            }
         }
         return null;
     }
@@ -434,7 +418,9 @@ public class PlacementUtil {
             case TOP -> {
                 return ((MixedSlabBlock) MIXED_SLAB_BLOCK).getDefaultStateWithSlabStates(newSlabState.with(SLAB_TYPE, BOTTOM).with(VERTICAL_TYPE, currentSlabState.get(VERTICAL_TYPE)), currentSlabState);
             }
+            default -> {
+                return null;
+            }
         }
-        return null;
     }
 }
