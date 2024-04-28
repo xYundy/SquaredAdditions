@@ -34,14 +34,6 @@ public class MixedSlabBlockEntity extends BlockEntity {
         this.bottomSlabState = bottomSlabState.with(SLAB_TYPE, SlabType.BOTTOM);
     }
 
-    public void setTopSlabState(BlockState topSlabState) {
-        this.topSlabState = topSlabState;
-    }
-
-    public void setBottomSlabState(BlockState bottomSlabState) {
-        this.bottomSlabState = bottomSlabState;
-    }
-
     @Nullable
     @Override
     public Packet<ClientPlayPacketListener> toUpdatePacket() {
