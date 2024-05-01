@@ -2,14 +2,10 @@ package pl.xyundy.squaredadditions.block;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 
-import static pl.xyundy.squaredadditions.block.ModBlocks.MIXED_SLAB_BLOCK_ENTITY;
 
 public class MixedSlabBlock extends Block implements BlockEntityProvider {
 
