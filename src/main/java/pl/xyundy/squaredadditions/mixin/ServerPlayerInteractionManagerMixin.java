@@ -1,5 +1,6 @@
 package pl.xyundy.squaredadditions.mixin;
 
+import pl.xyundy.squaredadditions.block.MixedSlabBlock;
 import pl.xyundy.squaredadditions.slabs.PlacementUtil;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
@@ -37,6 +38,25 @@ public class ServerPlayerInteractionManagerMixin {
             world.setBlockState(pos, breakState.with(SlabBlock.TYPE, breakType));
             return isRemoved;
         }
+
+        if (breakState.getBlock() instanceof MixedSlabBlock mixedSlabBlock) {
+            ServerPlayerEntity serverPlayer = player;
+            assert serverPlayer != null;
+            if (serverPlayer.isSneaking()) return instance.removeBlock(pos, b);
+
+            SlabType remainingSlabType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(serverPlayer));
+            boolean isRemoved = instance.removeBlock(pos, b);
+
+            System.out.println("server remainingSlabType: " + remainingSlabType);
+
+            switch (remainingSlabType) {
+                case TOP -> world.setBlockState(pos, mixedSlabBlock.getTopSlabState().with(SlabBlock.TYPE, remainingSlabType));
+                case BOTTOM -> world.setBlockState(pos, mixedSlabBlock.getBottomSlabState().with(SlabBlock.TYPE, remainingSlabType));
+            }
+
+            return isRemoved;
+        }
+
         return instance.removeBlock(pos, b);
     }
 }

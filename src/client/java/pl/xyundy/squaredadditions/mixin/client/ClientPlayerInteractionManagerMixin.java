@@ -1,5 +1,6 @@
 package pl.xyundy.squaredadditions.mixin.client;
 
+import pl.xyundy.squaredadditions.block.MixedSlabBlock;
 import pl.xyundy.squaredadditions.slabs.PlacementUtil;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
@@ -20,7 +21,9 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 // https://github.com/Oliver-makes-code/autoslab/blob/1.19/src/main/java/olivermakesco/de/autoslab/mixin/Mixin_ClientPlayerInteractionManager.java
 @Mixin(ClientPlayerInteractionManager.class)
 public class ClientPlayerInteractionManagerMixin {
-    @Shadow @Final private MinecraftClient client;
+    @Shadow
+    @Final
+    private MinecraftClient client;
 
     @Redirect(method = "breakBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z"))
     private boolean squaredadditions$tryBreakSlab(World instance, BlockPos pos, BlockState state, int flags) {
@@ -32,9 +35,28 @@ public class ClientPlayerInteractionManagerMixin {
             assert clientPlayer != null;
             if (clientPlayer.isSneaking()) return instance.setBlockState(pos, state, flags);
 
-            SlabType breakType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(clientPlayer));
-            return instance.setBlockState(pos, breakState.with(SlabBlock.TYPE, breakType), flags);
+            SlabType remainingSlabType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(clientPlayer));
+            return instance.setBlockState(pos, breakState.with(SlabBlock.TYPE, remainingSlabType), flags);
         }
+
+        if (breakState.getBlock() instanceof MixedSlabBlock mixedSlabBlock) {
+            ClientPlayerEntity clientPlayer = client.player;
+            assert clientPlayer != null;
+            if (clientPlayer.isSneaking()) return instance.setBlockState(pos, state, flags);
+
+            SlabType remainingSlabType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(clientPlayer));
+
+            System.out.println("client remainingSlabType: " + remainingSlabType);
+
+            return switch (remainingSlabType) {
+                case TOP ->
+                        instance.setBlockState(pos, mixedSlabBlock.getTopSlabState().with(SlabBlock.TYPE, remainingSlabType), flags);
+                case BOTTOM ->
+                        instance.setBlockState(pos, mixedSlabBlock.getBottomSlabState().with(SlabBlock.TYPE, remainingSlabType), flags);
+                case DOUBLE -> instance.setBlockState(pos, state, flags);
+            };
+        }
+
         return instance.setBlockState(pos, state, flags);
     }
 }
