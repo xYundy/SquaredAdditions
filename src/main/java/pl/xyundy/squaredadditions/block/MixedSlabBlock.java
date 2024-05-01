@@ -2,7 +2,11 @@ package pl.xyundy.squaredadditions.block;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 
@@ -42,5 +46,16 @@ public class MixedSlabBlock extends Block implements BlockEntityProvider {
     @Override
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.ENTITYBLOCK_ANIMATED;
+    }
+
+    @Override
+    public void onSteppedOn(World world, BlockPos blockPos, BlockState blockState, Entity entity) {
+        //TODO support vertical blocks - should I run function from both blocks, or random or what?
+        this.topSlabState.getBlock().onSteppedOn(world, blockPos, blockState, entity);
+    }
+
+    @Override
+    public float getBlastResistance() {
+        return Math.max(this.topSlabState.getBlock().getBlastResistance(), this.bottomSlabState.getBlock().getBlastResistance());
     }
 }
