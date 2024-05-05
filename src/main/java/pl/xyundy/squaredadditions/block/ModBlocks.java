@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final Block MIXED_SLAB_BLOCK = registerBlock("mixed_slab_block",
             new MixedSlabBlock(
                     Blocks.QUARTZ_SLAB.getDefaultState(),
-                    Blocks.BIRCH_SLAB.getDefaultState(),
+                    Blocks.NETHER_BRICK_SLAB.getDefaultState(),
                     FabricBlockSettings.create())
     );
 
