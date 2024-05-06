@@ -45,7 +45,6 @@ public class ClientPlayerInteractionManagerMixin {
             if (clientPlayer.isSneaking()) return instance.setBlockState(pos, state, flags);
 
             SlabType remainingSlabType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(clientPlayer));
-
             System.out.println("client remainingSlabType: " + remainingSlabType);
 
             return switch (remainingSlabType) {
