@@ -1,6 +1,8 @@
 package pl.xyundy.squaredadditions.mixin;
 
+import net.minecraft.block.entity.BlockEntity;
 import pl.xyundy.squaredadditions.block.MixedSlabBlock;
+import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 import pl.xyundy.squaredadditions.slabs.PlacementUtil;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
@@ -14,6 +16,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import pl.xyundy.squaredadditions.slabs.VerticalType;
+
+import static pl.xyundy.squaredadditions.slabs.Util.VERTICAL_TYPE;
 
 // Massive thanks to Oliver-makes-code and Andrew for some of the code behind this mixin
 // https://github.com/Oliver-makes-code/autoslab/blob/1.19/src/main/java/olivermakesco/de/autoslab/mixin/Mixin_ServerPlayerInteractionManager.java
@@ -40,6 +45,8 @@ public class ServerPlayerInteractionManagerMixin {
         }
 
         if (breakState.getBlock() instanceof MixedSlabBlock mixedSlabBlock) {
+            MixedSlabBlockEntity mixedSlabBlockEntity = (MixedSlabBlockEntity) instance.getBlockEntity(pos);
+
             ServerPlayerEntity serverPlayer = player;
             assert serverPlayer != null;
             if (serverPlayer.isSneaking()) return instance.removeBlock(pos, b);
@@ -47,11 +54,9 @@ public class ServerPlayerInteractionManagerMixin {
             SlabType remainingSlabType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(serverPlayer));
             boolean isRemoved = instance.removeBlock(pos, b);
 
-            System.out.println("server remainingSlabType: " + remainingSlabType);
-
             switch (remainingSlabType) {
-                case TOP -> world.setBlockState(pos, mixedSlabBlock.getTopSlabState().with(SlabBlock.TYPE, remainingSlabType));
-                case BOTTOM -> world.setBlockState(pos, mixedSlabBlock.getBottomSlabState().with(SlabBlock.TYPE, remainingSlabType));
+                case TOP -> world.setBlockState(pos, mixedSlabBlockEntity.topSlabState);
+                case BOTTOM -> world.setBlockState(pos, mixedSlabBlockEntity.bottomSlabState);
             }
 
             return isRemoved;

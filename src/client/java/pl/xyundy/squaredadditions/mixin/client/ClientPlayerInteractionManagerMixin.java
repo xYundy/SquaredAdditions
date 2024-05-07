@@ -1,6 +1,7 @@
 package pl.xyundy.squaredadditions.mixin.client;
 
 import pl.xyundy.squaredadditions.block.MixedSlabBlock;
+import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 import pl.xyundy.squaredadditions.slabs.PlacementUtil;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
@@ -15,6 +16,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import pl.xyundy.squaredadditions.slabs.VerticalType;
+
+import static pl.xyundy.squaredadditions.slabs.Util.VERTICAL_TYPE;
 
 // Massive thanks to andrew6rant & Oliver-makes-code for some of the code behind this mixin
 // https://github.com/Andrew6rant/Auto-Slabs/blob/1.20.x/src/main/java/io/github/andrew6rant/autoslabs/mixin/ClientPlayerInteractionManagerMixin.java
@@ -40,18 +44,20 @@ public class ClientPlayerInteractionManagerMixin {
         }
 
         if (breakState.getBlock() instanceof MixedSlabBlock mixedSlabBlock) {
+
+            MixedSlabBlockEntity mixedSlabBlockEntity = (MixedSlabBlockEntity) instance.getBlockEntity(pos);
+
             ClientPlayerEntity clientPlayer = client.player;
             assert clientPlayer != null;
             if (clientPlayer.isSneaking()) return instance.setBlockState(pos, state, flags);
 
             SlabType remainingSlabType = PlacementUtil.calcKleeSlab(breakState, PlacementUtil.calcRaycast(clientPlayer));
-            System.out.println("client remainingSlabType: " + remainingSlabType);
 
             return switch (remainingSlabType) {
                 case TOP ->
-                        instance.setBlockState(pos, mixedSlabBlock.getTopSlabState().with(SlabBlock.TYPE, remainingSlabType), flags);
+                        instance.setBlockState(pos, mixedSlabBlockEntity.topSlabState, flags);
                 case BOTTOM ->
-                        instance.setBlockState(pos, mixedSlabBlock.getBottomSlabState().with(SlabBlock.TYPE, remainingSlabType), flags);
+                        instance.setBlockState(pos, mixedSlabBlockEntity.bottomSlabState, flags);
                 case DOUBLE -> instance.setBlockState(pos, state, flags);
             };
         }
