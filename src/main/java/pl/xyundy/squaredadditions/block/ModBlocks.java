@@ -3,7 +3,6 @@ package pl.xyundy.squaredadditions.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import pl.xyundy.squaredadditions.SquaredAdditions;
 import net.minecraft.block.Block;
