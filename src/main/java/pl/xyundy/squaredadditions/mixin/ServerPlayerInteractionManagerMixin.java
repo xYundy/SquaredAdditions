@@ -1,6 +1,5 @@
 package pl.xyundy.squaredadditions.mixin;
 
-import net.minecraft.block.entity.BlockEntity;
 import pl.xyundy.squaredadditions.block.MixedSlabBlock;
 import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 import pl.xyundy.squaredadditions.slabs.PlacementUtil;
@@ -16,9 +15,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import pl.xyundy.squaredadditions.slabs.VerticalType;
-
-import static pl.xyundy.squaredadditions.slabs.Util.VERTICAL_TYPE;
 
 // Massive thanks to Oliver-makes-code and Andrew for some of the code behind this mixin
 // https://github.com/Oliver-makes-code/autoslab/blob/1.19/src/main/java/olivermakesco/de/autoslab/mixin/Mixin_ServerPlayerInteractionManager.java

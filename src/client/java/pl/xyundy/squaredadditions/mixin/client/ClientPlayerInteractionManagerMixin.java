@@ -16,7 +16,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import pl.xyundy.squaredadditions.slabs.VerticalType;
 
 import static pl.xyundy.squaredadditions.slabs.Util.VERTICAL_TYPE;
 
