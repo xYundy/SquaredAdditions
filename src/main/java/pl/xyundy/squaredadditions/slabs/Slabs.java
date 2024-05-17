@@ -15,7 +15,6 @@ import java.util.Map;
 
 public class Slabs {
     public static final RuntimeResourcePack SLABS_RESOURCES = RuntimeResourcePack.create("squaredadditionsslabs:resources", 15);
-
     public static final Map<PlayerEntity, SlabLockEnum> slabLockPosition = new HashMap<>();
 
     public static void initialize() {

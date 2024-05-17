@@ -10,7 +10,7 @@ import pl.xyundy.squaredadditions.slabs.Slabs;
 
 public class SquaredAdditions implements ModInitializer {
 	public static final String MOD_ID = "squaredadditions";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+  public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {

@@ -90,6 +90,7 @@ public class ModItems {
         entries.add(EMERALD_LEGGINGS);
         entries.add(EMERALD_BOOTS);
     }
+
     public static void itemGroupTools(FabricItemGroupEntries entries) {
         entries.add(COPPER_PICKAXE);
         entries.add(COPPER_SHOVEL);

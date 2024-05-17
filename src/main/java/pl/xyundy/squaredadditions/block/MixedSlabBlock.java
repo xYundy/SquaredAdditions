@@ -54,6 +54,7 @@ public class MixedSlabBlock extends Block implements BlockEntityProvider {
 
     @Override
     public float getBlastResistance() {
+        //TODO check if correct slabs are saved
         return Math.max(this.topSlabState.getBlock().getBlastResistance(), this.bottomSlabState.getBlock().getBlastResistance());
     }
 }

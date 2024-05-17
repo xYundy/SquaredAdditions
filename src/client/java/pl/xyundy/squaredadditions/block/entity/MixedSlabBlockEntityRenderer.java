@@ -23,7 +23,6 @@ public class MixedSlabBlockEntityRenderer implements BlockEntityRenderer<MixedSl
 
         BlockRenderManager manager = MinecraftClient.getInstance().getBlockRenderManager();
 
-
         RenderLayer layerTop = entity.topSlabState.isTransparent(world, pos) ? RenderLayer.getTranslucent() : RenderLayer.getSolid();
         RenderLayer layerBot = entity.bottomSlabState.isTransparent(world, pos) ? RenderLayer.getTranslucent() : RenderLayer.getSolid();
 

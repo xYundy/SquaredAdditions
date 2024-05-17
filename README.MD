@@ -45,7 +45,7 @@
 [![Supported Game Supported Versions][modrinth-supported-game-versions-shield]][modrinth-supported-game-versions-url]
 
   <p align="center">
-    A Minecraft mod for Fabric modloader which adds new blocks, items & other Vanilla+/Create themed stuff.
+    A Minecraft: Java Edition mod for Fabric modloader which adds new blocks, items & other Vanilla+/Create themed stuff.
     <br />
     <a href="#installation"><strong>Go to installation guide »</strong></a></li>
     <br />
