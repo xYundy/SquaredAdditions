@@ -323,7 +323,5 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 [Fabric-url]: https://fabricmc.net/
 [MidnightLib]: https://img.shields.io/badge/MidnightLib-20232A?style=for-the-badge
 [MidnightLib-url]: https://www.midnightdust.eu/midnightlib/
-[Fabric]: https://img.shields.io/badge/Fabric_Mod_Loader-20232A?style=for-the-badge
-[Fabric-url]: https://fabricmc.net/
 [ARRP]: https://img.shields.io/badge/ARRP-20232A?style=for-the-badge
 [ARRP-url]: https://github.com/Devan-Kerman/ARRP
