@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import pl.xyundy.squaredadditions.block.entity.MixedSlabBlockEntity;
 
-
 public class MixedSlabBlock extends Block implements BlockEntityProvider {
 
     private BlockState topSlabState;
