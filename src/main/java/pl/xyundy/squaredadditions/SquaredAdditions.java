@@ -14,7 +14,7 @@ public class SquaredAdditions implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-  		LOGGER.info("SquaredAdditions initialization started!");
+  	LOGGER.info("SquaredAdditions initialization started!");
 		Slabs.initialize();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
