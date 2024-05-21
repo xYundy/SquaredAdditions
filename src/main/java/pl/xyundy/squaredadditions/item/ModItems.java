@@ -46,7 +46,6 @@ public class ModItems {
             new AxeItem(ModToolMaterial.ROSE_GOLD_INGOT, 6.0F, -3.0F, new FabricItemSettings()));
     public static final Item ROSE_GOLD_HOE = registerItem("rose_gold_hoe",
             new HoeItem(ModToolMaterial.ROSE_GOLD_INGOT, -1, -3.0F, new FabricItemSettings()));
-
     public static final Item ROSE_GOLD_HELMET = registerItem("rose_gold_helmet",
             new ArmorItem(ModArmorMaterial.ROSE_GOLD, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item ROSE_GOLD_CHESTPLATE = registerItem("rose_gold_chestplate",
