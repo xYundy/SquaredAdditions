@@ -75,6 +75,7 @@ dependencies {
 	modImplementation ("com.terraformersmc:modmenu:${project.modmenu_version}") {
 		exclude module: "fabric-api"
 	}
+
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 }
 
