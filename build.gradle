@@ -6,7 +6,6 @@ plugins {
 String runNumber = System.getenv("GITHUB_RUN_NUMBER")
 String build = runNumber != null ? "build.$runNumber" : "local"
 version = "$mod_version-$build+mc$minecraft_version"
-
 group = project.maven_group
 
 base {
