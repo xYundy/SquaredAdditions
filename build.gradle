@@ -21,15 +21,12 @@ repositories {
 	maven {
 		url "https://jitpack.io"
 	}
-
 	maven {
 		url "https://maven.terraformersmc.com/releases/"
 	}
-
 	maven {
 		url = uri("https://ueaj.dev/maven")
 	}
-
 	maven {
 		url = "https://api.modrinth.com/maven"
 	}
