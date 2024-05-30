@@ -52,17 +52,14 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
 	include modApi("com.github.Virtuoel:Statement:${project.statement_version}", {
 		exclude group: "net.fabricmc.fabric-api"
 	})
 
 	include modApi("net.devtech:arrp:${project.arrp_version}")
-
 	modImplementation ("com.terraformersmc:modmenu:${project.modmenu_version}") {
 		exclude module: "fabric-api"
 	}
-
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 }
 
