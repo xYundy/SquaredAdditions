@@ -130,7 +130,6 @@ You may also suggest changes by forking this repo and creating a pull request or
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
