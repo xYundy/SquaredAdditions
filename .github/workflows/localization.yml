@@ -3,7 +3,6 @@
 
 name: Sync Crowdin Translations
 
-# Controls when the action will run.
 on: workflow_dispatch
 jobs:
     synchronize-with-crowdin:
