@@ -1,12 +1,12 @@
 plugins {
 	id 'fabric-loom' version "1.6.+"
-	id 'maven-publish'  // maven publishing
+	id 'maven-publish'
 }
 
 String runNumber = System.getenv("GITHUB_RUN_NUMBER")
-String build = runNumber != null ? "build.$runNumber" : "local"
-version = "$mod_version-$build+mc$minecraft_version"
-group = project.maven_group
+String build     = runNumber != null ? "build.$runNumber" : "local"
+version          = "$mod_version-$build+mc$minecraft_version"
+group            = project.maven_group
 
 base {
 	archivesName = project.archives_base_name
@@ -21,15 +21,12 @@ repositories {
 	maven {
 		url "https://jitpack.io"
 	}
-
 	maven {
 		url "https://maven.terraformersmc.com/releases/"
 	}
-
 	maven {
 		url = uri("https://ueaj.dev/maven")
 	}
-
 	maven {
 		url = "https://api.modrinth.com/maven"
 	}
@@ -51,28 +48,18 @@ fabricApi {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
-	// Uncomment the following line to enable the deprecated Fabric API modules. 
-	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
-
-	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	include modApi("com.github.Virtuoel:Statement:${project.statement_version}", {
 		exclude group: "net.fabricmc.fabric-api"
 	})
 
 	include modApi("net.devtech:arrp:${project.arrp_version}")
-
 	modImplementation ("com.terraformersmc:modmenu:${project.modmenu_version}") {
 		exclude module: "fabric-api"
 	}
-
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 }
 

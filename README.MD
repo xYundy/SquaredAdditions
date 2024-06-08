@@ -23,7 +23,6 @@
 <br />
 <br />
 
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -119,8 +118,6 @@ You may also suggest changes by forking this repo and creating a pull request or
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
 * [![IntelliJIdea][IntelliJIdea]][IntelliJIdea-url]
@@ -129,7 +126,6 @@ You may also suggest changes by forking this repo and creating a pull request or
 * [![ARRP][ARRP]][ARRP-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -279,7 +275,6 @@ Discord: `xyundy`
 Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xYundy/SquaredAdditions)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
