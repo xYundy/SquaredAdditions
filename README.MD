@@ -276,7 +276,6 @@ Project Link: [https://github.com/xYundy/SquaredAdditions](https://github.com/xY
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 * [Modding by Kaupenjoe](https://www.youtube.com/@ModdingByKaupenjoe)
